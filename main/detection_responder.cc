@@ -23,6 +23,8 @@ limitations under the License.
 #include "tensorflow/lite/micro/micro_log.h"
 #include "esp_log.h"
 #include "driver/gpio.h"
+#include "freertos/FreeRTOS.h"
+#include "freertos/task.h"
 
 #define FLASH_GPIO static_cast<gpio_num_t>(4)
 extern bool alarm_active;
@@ -86,12 +88,16 @@ void RespondToDetection(float person_score, float no_person_score) {
   MicroPrintf("person score:%d%%, no person score %d%%",
               person_score_int, 100 - person_score_int);
 
-  if (alarm_active && person_score_int >= 70){
-    printf("Persona detectada...Alarma Encendida\n");
-    gpio_set_level(FLASH_GPIO, 1);
-  }
-  else {
-    printf("No hay persona detectada o Alarma\n");
+  if (alarm_active && person_score_int >= 65) {
+    printf("Persona detectada... Alarma Encendida\n");
+    for (int i = 0; i < 5; ++i) {  
+      gpio_set_level(FLASH_GPIO, 1);
+      vTaskDelay(250 / portTICK_PERIOD_MS); 
+      gpio_set_level(FLASH_GPIO, 0);
+      vTaskDelay(250 / portTICK_PERIOD_MS); 
+    }
+  } else {
+    printf("No hay persona detectada o Alarma desactivada\n");
     gpio_set_level(FLASH_GPIO, 0);
   }
 }
