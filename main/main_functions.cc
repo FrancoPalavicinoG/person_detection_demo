@@ -51,7 +51,7 @@ constexpr int scratchBufSize = 40 * 1024;
 constexpr int scratchBufSize = 0;
 #endif
 // An area of memory to use for input, output, and intermediate arrays.
-constexpr int kTensorArenaSize = 81 * 1024 + 9000;
+constexpr int kTensorArenaSize = 81 * 1024 + scratchBufSize;
 static uint8_t *tensor_arena;//[kTensorArenaSize]; // Maybe we should move this to external
 }  // namespace
 
@@ -82,27 +82,12 @@ void setup() {
   //
   // tflite::AllOpsResolver resolver;
   // NOLINTNEXTLINE(runtime-global-variables)
-  // static tflite::MicroMutableOpResolver<8> micro_op_resolver;
-  // micro_op_resolver.AddQuantize();
-  // micro_op_resolver.AddDequantize();
-  // micro_op_resolver.AddAveragePool2D();
-  // micro_op_resolver.AddConv2D();
-  // micro_op_resolver.AddDepthwiseConv2D();
-  // micro_op_resolver.AddReshape();
-  // micro_op_resolver.AddSoftmax();
-  // micro_op_resolver.AddFullyConnected();
-
-  static tflite::MicroMutableOpResolver<10> micro_op_resolver;
+  static tflite::MicroMutableOpResolver<5> micro_op_resolver;
   micro_op_resolver.AddAveragePool2D();
   micro_op_resolver.AddConv2D();
   micro_op_resolver.AddDepthwiseConv2D();
   micro_op_resolver.AddReshape();
   micro_op_resolver.AddSoftmax();
-  micro_op_resolver.AddMaxPool2D(); 
-  micro_op_resolver.AddFullyConnected(); 
-  micro_op_resolver.AddLogistic(); 
-  micro_op_resolver.AddQuantize();
-  micro_op_resolver.AddDequantize();
 
   // Build an interpreter to run the model with.
   // NOLINTNEXTLINE(runtime-global-variables)

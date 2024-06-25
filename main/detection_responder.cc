@@ -64,10 +64,8 @@ static void create_gui(void)
 #endif // DISPLAY_SUPPORT
 
 void RespondToDetection(float person_score, float no_person_score) {
-  int person_score_int = (person_score) * 100 + 30.5;
-  int no_person_score_int = (no_person_score) * 100 - 30.5;
-  
-  //(void) no_person_score; // unused
+  int person_score_int = (person_score) * 100 + 0.5;
+  (void) no_person_score; // unused
 #if DISPLAY_SUPPORT
     if (!camera_canvas) {
       create_gui();
@@ -85,11 +83,11 @@ void RespondToDetection(float person_score, float no_person_score) {
     bsp_display_unlock();
 #endif // DISPLAY_SUPPORT
   MicroPrintf("person score:%d%%, no person score %d%%",
-              person_score_int, no_person_score_int);
+              person_score_int, 100 - person_score_int);
 
   gpio_reset_pin(LED_GPIO);
   gpio_set_direction(LED_GPIO, GPIO_MODE_OUTPUT);
-  if (person_score_int >= 50 && no_person_score_int <= 30) {
+  if (person_score_int >= 70) {
     printf("Persona detectada...LED Prendida\n");
     gpio_set_level(LED_GPIO, 1);
   }
