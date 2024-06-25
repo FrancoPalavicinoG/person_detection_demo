@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/Users/franco_palavicino/esp/projects_tf/person_detection_proyect/build/CMakeFiles/bootloader
+/Users/franco_palavicino/esp/projects_tf/person_detection_proyect/build/CMakeFiles/bootloader.rule
+/Users/franco_palavicino/esp/projects_tf/person_detection_proyect/build/CMakeFiles/bootloader-complete.rule
+/Users/franco_palavicino/esp/projects_tf/person_detection_proyect/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/Users/franco_palavicino/esp/projects_tf/person_detection_proyect/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/Users/franco_palavicino/esp/projects_tf/person_detection_proyect/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/Users/franco_palavicino/esp/projects_tf/person_detection_proyect/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/Users/franco_palavicino/esp/projects_tf/person_detection_proyect/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/Users/franco_palavicino/esp/projects_tf/person_detection_proyect/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/Users/franco_palavicino/esp/projects_tf/person_detection_proyect/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

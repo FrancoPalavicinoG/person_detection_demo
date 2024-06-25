@@ -1,0 +1,1697 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:7524
+load:0x40078000,len:16552
+load:0x40080400,len:4
+load:0x40080404,len:4316
+entry 0x4008065c
+[0;32mI (29) boot: ESP-IDF v5.3-dev-2747-g4f3cd0deb9 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Jun 18 2024 17:51:41[0m
+[0;32mI (30) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v1.0[0m
+[0;32mI (38) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (43) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (48) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (53) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (57) boot: Enabling RNG early entropy source...[0m
+[0;32mI (63) boot: Partition Table:[0m
+[0;32mI (66) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (74) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (81) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (88) boot:  2 factory          factory app      00 00 00010000 00180000[0m
+[0;32mI (96) boot: End of partition table[0m
+[0;32mI (100) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=5396ch (342380) map[0m
+[0;32mI (196) esp_image: segment 1: paddr=00063994 vaddr=3ffb0000 size=0336ch ( 13164) load[0m
+[0;32mI (200) esp_image: segment 2: paddr=00066d08 vaddr=40080000 size=09310h ( 37648) load[0m
+[0;32mI (214) esp_image: segment 3: paddr=00070020 vaddr=400d0020 size=342cch (213708) map[0m
+[0;32mI (269) esp_image: segment 4: paddr=000a42f4 vaddr=40089310 size=079c0h ( 31168) load[0m
+[0;32mI (287) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (287) boot: Disabling RNG early entropy source...[0m
+[0;32mI (299) cpu_start: Multicore app[0m
+[0;32mI (299) quad_psram: This chip is ESP32-D0WD[0m
+[0;32mI (299) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (301) esp_psram: Speed: 80MHz[0m
+[0;32mI (305) esp_psram: PSRAM initialized, cache is in low/high (2-core) mode.[0m
+[0;33mW (312) esp_psram: Virtual address not enough for PSRAM, map as much as we can. 4MB is mapped[0m
+[0;32mI (785) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (793) cpu_start: Pro cpu start user code[0m
+[0;32mI (793) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (793) app_init: Application information:[0m
+[0;32mI (796) app_init: Project name:     person_detection[0m
+[0;32mI (801) app_init: App version:      1[0m
+[0;32mI (806) app_init: Compile time:     Jun 18 2024 17:51:35[0m
+[0;32mI (812) app_init: ELF file SHA256:  ad51f7ca7...[0m
+[0;32mI (817) app_init: ESP-IDF:          v5.3-dev-2747-g4f3cd0deb9[0m
+[0;32mI (824) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (828) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (833) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (838) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (845) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (851) heap_init: At 3FFB41A8 len 0002BE58 (175 KiB): DRAM[0m
+[0;32mI (858) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (864) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (870) heap_init: At 40090CD0 len 0000F330 (60 KiB): IRAM[0m
+[0;32mI (877) esp_psram: Adding pool of 4096K of PSRAM memory to heap allocator[0m
+[0;32mI (885) spi_flash: detected chip: generic[0m
+[0;32mI (889) spi_flash: flash io: qio[0m
+[0;33mW (893) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (904) main_task: Started on CPU0[0m
+[0;32mI (914) main_task: Calling app_main()[0m
+[0;32mI (914) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (914) cam_hal: cam init ok[0m
+[0;32mI (924) sccb: pin_sda 26 pin_scl 27[0m
+[0;32mI (924) sccb: sccb_i2c_port=1[0m
+[0;32mI (924) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (964) camera: Detected camera at address=0x30[0m
+[0;32mI (964) camera: Detected OV2640 camera[0m
+[0;32mI (964) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (1034) esp32 ll_cam: node_size: 3072, nodes_per_line: 1, lines_per_node: 4, dma_half_buffer_min:  3072, dma_half_buffer: 12288,lines_per_half_buffer: 16, dma_buffer_size: 24576, image_size: 18432[0m
+[0;32mI (1044) cam_hal: buffer_size: 24576, half_buffer_size: 12288, node_buffer_size: 3072, node_cnt: 8, total_cnt: 1[0m
+[0;32mI (1054) cam_hal: Allocating 9216 Byte frame buffer in PSRAM[0m
+[0;32mI (1064) cam_hal: Allocating 9216 Byte frame buffer in PSRAM[0m
+[0;32mI (1064) cam_hal: cam config ok[0m
+[0;32mI (1074) ov2640: Set PLL: clk_2x: 0, clk_div: 3, pclk_auto: 1, pclk_div: 8[0m
+Camera Initialized
+
+Image Captured
+
+person score:32%, no person score 68%
+[0;32mI (1694) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:30%, no person score 70%
+[0;32mI (2074) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:20%, no person score 80%
+[0;32mI (2454) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:18%, no person score 82%
+[0;32mI (2834) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:37%, no person score 63%
+[0;32mI (3214) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:30%, no person score 70%
+[0;32mI (3594) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:14%, no person score 86%
+[0;32mI (3974) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:11%, no person score 89%
+[0;32mI (4354) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-38%, no person score 138%
+[0;32mI (4734) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-15%, no person score 115%
+[0;32mI (5114) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-13%, no person score 113%
+[0;32mI (5494) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-42%, no person score 142%
+[0;32mI (5874) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-18%, no person score 118%
+[0;32mI (6254) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-24%, no person score 124%
+[0;32mI (6634) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-18%, no person score 118%
+[0;32mI (7014) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-20%, no person score 120%
+[0;32mI (7394) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-15%, no person score 115%
+[0;32mI (7774) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-13%, no person score 113%
+[0;32mI (8154) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-13%, no person score 113%
+[0;32mI (8534) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-15%, no person score 115%
+[0;32mI (8914) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-26%, no person score 126%
+[0;32mI (9294) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:37%, no person score 63%
+[0;32mI (9674) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:-29%, no person score 129%
+[0;32mI (10054) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-26%, no person score 126%
+[0;32mI (10434) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-29%, no person score 129%
+[0;32mI (10814) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-28%, no person score 128%
+[0;32mI (11194) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:43%, no person score 57%
+[0;32mI (11574) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:46%, no person score 54%
+[0;32mI (11954) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:49%, no person score 51%
+[0;32mI (12334) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:45%, no person score 55%
+[0;32mI (12714) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:45%, no person score 55%
+[0;32mI (13094) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:43%, no person score 57%
+[0;32mI (13474) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:-44%, no person score 144%
+[0;32mI (13854) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:46%, no person score 54%
+[0;32mI (14234) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:45%, no person score 55%
+[0;32mI (14614) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:43%, no person score 57%
+[0;32mI (14994) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:32%, no person score 68%
+[0;32mI (15374) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:29%, no person score 71%
+[0;32mI (15754) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:30%, no person score 70%
+[0;32mI (16134) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:49%, no person score 51%
+[0;32mI (16514) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:-37%, no person score 137%
+[0;32mI (16894) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-41%, no person score 141%
+[0;32mI (17274) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-47%, no person score 147%
+[0;32mI (17654) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:18%, no person score 82%
+[0;32mI (18034) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-21%, no person score 121%
+[0;32mI (18414) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-24%, no person score 124%
+[0;32mI (18794) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-22%, no person score 122%
+[0;32mI (19174) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-37%, no person score 137%
+[0;32mI (19554) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-44%, no person score 144%
+[0;32mI (19934) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-33%, no person score 133%
+[0;32mI (20314) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-20%, no person score 120%
+[0;32mI (20694) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-22%, no person score 122%
+[0;32mI (21074) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-20%, no person score 120%
+[0;32mI (21454) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-18%, no person score 118%
+[0;32mI (21834) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-47%, no person score 147%
+[0;32mI (22214) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:22%, no person score 78%
+[0;32mI (22594) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:28%, no person score 72%
+[0;32mI (22974) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:46%, no person score 54%
+[0;32mI (23354) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:-31%, no person score 131%
+[0;32mI (23734) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:42%, no person score 58%
+[0;32mI (24114) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:-48%, no person score 148%
+[0;32mI (24494) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:38%, no person score 62%
+[0;32mI (24874) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:-42%, no person score 142%
+[0;32mI (25254) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:44%, no person score 56%
+[0;32mI (25634) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:-26%, no person score 126%
+[0;32mI (26014) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+[0;32mI (26394) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:-41%, no person score 141%
+[0;32mI (26774) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-27%, no person score 127%
+[0;32mI (27154) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-19%, no person score 119%
+[0;32mI (27534) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-42%, no person score 142%
+[0;32mI (27914) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-23%, no person score 123%
+[0;32mI (28294) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:47%, no person score 53%
+[0;32mI (28674) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:29%, no person score 71%
+[0;32mI (29054) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:24%, no person score 76%
+[0;32mI (29434) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:25%, no person score 75%
+[0;32mI (29814) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:36%, no person score 64%
+[0;32mI (30194) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:41%, no person score 59%
+[0;32mI (30574) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:-40%, no person score 140%
+[0;32mI (30954) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-44%, no person score 144%
+[0;32mI (31334) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-46%, no person score 146%
+[0;32mI (31714) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-45%, no person score 145%
+[0;32mI (32094) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:46%, no person score 54%
+[0;32mI (32474) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:36%, no person score 64%
+[0;32mI (32854) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:38%, no person score 62%
+[0;32mI (33234) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:-31%, no person score 131%
+[0;32mI (33614) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:43%, no person score 57%
+[0;32mI (33994) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:37%, no person score 63%
+[0;32mI (34374) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:-45%, no person score 145%
+[0;32mI (34754) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:40%, no person score 60%
+[0;32mI (35134) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:43%, no person score 57%
+[0;32mI (35514) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:39%, no person score 61%
+[0;32mI (35894) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:-32%, no person score 132%
+[0;32mI (36274) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-34%, no person score 134%
+[0;32mI (36654) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-45%, no person score 145%
+[0;32mI (37034) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:25%, no person score 75%
+[0;32mI (37414) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-18%, no person score 118%
+[0;32mI (37794) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-17%, no person score 117%
+[0;32mI (38174) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-42%, no person score 142%
+[0;32mI (38554) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:44%, no person score 56%
+[0;32mI (38934) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:-47%, no person score 147%
+[0;32mI (39314) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:47%, no person score 53%
+[0;32mI (39694) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:42%, no person score 58%
+[0;32mI (40074) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:38%, no person score 62%
+[0;32mI (40454) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:41%, no person score 59%
+[0;32mI (40834) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:-40%, no person score 140%
+[0;32mI (41214) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-13%, no person score 113%
+[0;32mI (41594) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:47%, no person score 53%
+[0;32mI (41974) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:-38%, no person score 138%
+[0;32mI (42354) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-33%, no person score 133%
+[0;32mI (42734) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-20%, no person score 120%
+[0;32mI (43114) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-39%, no person score 139%
+[0;32mI (43494) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-17%, no person score 117%
+[0;32mI (43874) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-42%, no person score 142%
+[0;32mI (44254) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-16%, no person score 116%
+[0;32mI (44634) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-32%, no person score 132%
+[0;32mI (45014) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-28%, no person score 128%
+[0;32mI (45394) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-13%, no person score 113%
+[0;32mI (45774) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:46%, no person score 54%
+[0;32mI (46154) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:-36%, no person score 136%
+[0;32mI (46534) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-18%, no person score 118%
+[0;32mI (46914) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-24%, no person score 124%
+[0;32mI (47294) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-35%, no person score 135%
+[0;32mI (47674) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:18%, no person score 82%
+[0;32mI (48054) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:29%, no person score 71%
+[0;32mI (48434) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-19%, no person score 119%
+[0;32mI (48814) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:37%, no person score 63%
+[0;32mI (49194) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:31%, no person score 69%
+[0;32mI (49574) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:25%, no person score 75%
+[0;32mI (49954) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:41%, no person score 59%
+[0;32mI (50334) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:-24%, no person score 124%
+[0;32mI (50714) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+[0;32mI (51094) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:46%, no person score 54%
+[0;32mI (51474) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:-49%, no person score 149%
+[0;32mI (51854) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:45%, no person score 55%
+[0;32mI (52234) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:-47%, no person score 147%
+[0;32mI (52614) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-39%, no person score 139%
+[0;32mI (52994) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-38%, no person score 138%
+[0;32mI (53374) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-37%, no person score 137%
+[0;32mI (53754) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-45%, no person score 145%
+[0;32mI (54134) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:47%, no person score 53%
+[0;32mI (54514) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:-36%, no person score 136%
+[0;32mI (54894) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:38%, no person score 62%
+[0;32mI (55274) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:-41%, no person score 141%
+[0;32mI (55654) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-35%, no person score 135%
+[0;32mI (56034) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-41%, no person score 141%
+[0;32mI (56414) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-34%, no person score 134%
+[0;32mI (56794) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-21%, no person score 121%
+[0;32mI (57174) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-36%, no person score 136%
+[0;32mI (57554) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-41%, no person score 141%
+[0;32mI (57934) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:43%, no person score 57%
+[0;32mI (58314) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:-31%, no person score 131%
+[0;32mI (58694) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-15%, no person score 115%
+[0;32mI (59074) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-41%, no person score 141%
+[0;32mI (59454) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:42%, no person score 58%
+[0;32mI (59834) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:-20%, no person score 120%
+[0;32mI (60214) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-22%, no person score 122%
+[0;32mI (60594) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-41%, no person score 141%
+[0;32mI (60974) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-37%, no person score 137%
+[0;32mI (61354) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-30%, no person score 130%
+[0;32mI (61734) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-19%, no person score 119%
+[0;32mI (62114) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-42%, no person score 142%
+[0;32mI (62494) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:50%, no person score 50%
+[0;32mI (62874) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:-33%, no person score 133%
+[0;32mI (63254) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:34%, no person score 66%
+[0;32mI (63634) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:-49%, no person score 149%
+[0;32mI (64014) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-17%, no person score 117%
+[0;32mI (64394) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+[0;32mI (64774) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-21%, no person score 121%
+[0;32mI (65154) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-37%, no person score 137%
+[0;32mI (65534) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-40%, no person score 140%
+[0;32mI (65914) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-43%, no person score 143%
+[0;32mI (66294) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-33%, no person score 133%
+[0;32mI (66674) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:45%, no person score 55%
+[0;32mI (67054) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:-37%, no person score 137%
+[0;32mI (67434) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-37%, no person score 137%
+[0;32mI (67814) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-41%, no person score 141%
+[0;32mI (68194) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-32%, no person score 132%
+[0;32mI (68574) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-35%, no person score 135%
+[0;32mI (68954) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:31%, no person score 69%
+[0;32mI (69334) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:36%, no person score 64%
+[0;32mI (69714) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:33%, no person score 67%
+[0;32mI (70094) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:-41%, no person score 141%
+[0;32mI (70474) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-41%, no person score 141%
+[0;32mI (70854) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-42%, no person score 142%
+[0;32mI (71234) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-40%, no person score 140%
+[0;32mI (71614) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-40%, no person score 140%
+[0;32mI (71994) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-37%, no person score 137%
+[0;32mI (72374) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-11%, no person score 111%
+[0;32mI (72754) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:34%, no person score 66%
+[0;32mI (73134) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:30%, no person score 70%
+[0;32mI (73514) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:32%, no person score 68%
+[0;32mI (73894) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:-41%, no person score 141%
+[0;32mI (74274) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-41%, no person score 141%
+[0;32mI (74654) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-44%, no person score 144%
+[0;32mI (75034) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-39%, no person score 139%
+[0;32mI (75414) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-40%, no person score 140%
+[0;32mI (75794) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-38%, no person score 138%
+[0;32mI (76174) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-16%, no person score 116%
+[0;32mI (76554) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:36%, no person score 64%
+[0;32mI (76934) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:39%, no person score 61%
+[0;32mI (77314) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:44%, no person score 56%
+[0;32mI (77694) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:-41%, no person score 141%
+[0;32mI (78074) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-42%, no person score 142%
+[0;32mI (78454) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-49%, no person score 149%
+[0;32mI (78834) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-39%, no person score 139%
+[0;32mI (79214) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-39%, no person score 139%
+[0;32mI (79594) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-36%, no person score 136%
+[0;32mI (79974) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:43%, no person score 57%
+[0;32mI (80354) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:46%, no person score 54%
+[0;32mI (80734) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:42%, no person score 58%
+[0;32mI (81114) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:-40%, no person score 140%
+[0;32mI (81494) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-30%, no person score 130%
+[0;32mI (81874) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-45%, no person score 145%
+[0;32mI (82254) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-27%, no person score 127%
+[0;32mI (82634) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-24%, no person score 124%
+[0;32mI (83014) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-33%, no person score 133%
+[0;32mI (83394) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-41%, no person score 141%
+[0;32mI (83774) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-18%, no person score 118%
+[0;32mI (84154) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-13%, no person score 113%
+[0;32mI (84534) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-23%, no person score 123%
+[0;32mI (84914) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-24%, no person score 124%
+[0;32mI (85294) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-24%, no person score 124%
+[0;32mI (85674) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-29%, no person score 129%
+[0;32mI (86054) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-29%, no person score 129%
+[0;32mI (86434) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-22%, no person score 122%
+[0;32mI (86814) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-19%, no person score 119%
+[0;32mI (87194) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-19%, no person score 119%
+[0;32mI (87574) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-18%, no person score 118%
+[0;32mI (87954) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-19%, no person score 119%
+[0;32mI (88334) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-20%, no person score 120%
+[0;32mI (88714) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-20%, no person score 120%
+[0;32mI (89094) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-20%, no person score 120%
+[0;32mI (89474) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-20%, no person score 120%
+[0;32mI (89854) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-20%, no person score 120%
+[0;32mI (90234) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-19%, no person score 119%
+[0;32mI (90614) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-20%, no person score 120%
+[0;32mI (90994) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-20%, no person score 120%
+[0;32mI (91374) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-20%, no person score 120%
+[0;32mI (91754) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-20%, no person score 120%
+[0;32mI (92134) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-20%, no person score 120%
+[0;32mI (92514) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-21%, no person score 121%
+[0;32mI (92894) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-21%, no person score 121%
+[0;32mI (93274) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-20%, no person score 120%
+[0;32mI (93654) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-20%, no person score 120%
+[0;32mI (94034) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-20%, no person score 120%
+[0;32mI (94414) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-20%, no person score 120%
+[0;32mI (94794) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-21%, no person score 121%
+[0;32mI (95174) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-22%, no person score 122%
+[0;32mI (95554) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-19%, no person score 119%
+[0;32mI (95934) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-20%, no person score 120%
+[0;32mI (96314) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-20%, no person score 120%
+[0;32mI (96694) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-22%, no person score 122%
+[0;32mI (97074) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-20%, no person score 120%
+[0;32mI (97454) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-21%, no person score 121%
+[0;32mI (97834) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-20%, no person score 120%
+[0;32mI (98214) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-20%, no person score 120%
+[0;32mI (98594) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-21%, no person score 121%
+[0;32mI (98974) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-21%, no person score 121%
+[0;32mI (99354) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-21%, no person score 121%
+[0;32mI (99734) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-22%, no person score 122%
+[0;32mI (100114) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-22%, no person score 122%
+[0;32mI (100494) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-23%, no person score 123%
+[0;32mI (100874) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-22%, no person score 122%
+[0;32mI (101254) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-21%, no person score 121%
+[0;32mI (101634) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-19%, no person score 119%
+[0;32mI (102014) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-20%, no person score 120%
+[0;32mI (102394) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-18%, no person score 118%
+[0;32mI (102774) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-17%, no person score 117%
+[0;32mI (103154) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-16%, no person score 116%
+[0;32mI (103534) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-20%, no person score 120%
+[0;32mI (103914) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-20%, no person score 120%
+[0;32mI (104294) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-13%, no person score 113%
+[0;32mI (104674) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:27%, no person score 73%
+[0;32mI (105054) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:31%, no person score 69%
+[0;32mI (105434) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:25%, no person score 75%
+[0;32mI (105814) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:35%, no person score 65%
+[0;32mI (106194) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:-44%, no person score 144%
+[0;32mI (106574) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-44%, no person score 144%
+[0;32mI (106954) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-47%, no person score 147%
+[0;32mI (107334) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:50%, no person score 50%
+[0;32mI (107714) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:-45%, no person score 145%
+[0;32mI (108094) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-46%, no person score 146%
+[0;32mI (108474) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+[0;32mI (108854) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:50%, no person score 50%
+[0;32mI (109234) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:48%, no person score 52%
+[0;32mI (109614) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:45%, no person score 55%
+[0;32mI (109994) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:46%, no person score 54%
+[0;32mI (110374) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:46%, no person score 54%
+[0;32mI (110754) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:47%, no person score 53%
+[0;32mI (111134) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:46%, no person score 54%
+[0;32mI (111514) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:48%, no person score 52%
+[0;32mI (111894) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:47%, no person score 53%
+[0;32mI (112274) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:47%, no person score 53%
+[0;32mI (112654) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:48%, no person score 52%
+[0;32mI (113034) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:-47%, no person score 147%
+[0;32mI (113414) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-49%, no person score 149%
+[0;32mI (113794) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-48%, no person score 148%
+[0;32mI (114174) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:46%, no person score 54%
+[0;32mI (114554) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:-47%, no person score 147%
+[0;32mI (114934) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-49%, no person score 149%
+[0;32mI (115314) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-47%, no person score 147%
+[0;32mI (115694) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+[0;32mI (116074) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:-47%, no person score 147%
+[0;32mI (116454) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-46%, no person score 146%
+[0;32mI (116834) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-45%, no person score 145%
+[0;32mI (117214) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-47%, no person score 147%
+[0;32mI (117594) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-47%, no person score 147%
+[0;32mI (117974) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-19%, no person score 119%
+[0;32mI (118354) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-19%, no person score 119%
+[0;32mI (118734) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-24%, no person score 124%
+[0;32mI (119114) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-25%, no person score 125%
+[0;32mI (119494) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-26%, no person score 126%
+[0;32mI (119874) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-24%, no person score 124%
+[0;32mI (120254) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-25%, no person score 125%
+[0;32mI (120634) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-24%, no person score 124%
+[0;32mI (121014) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-25%, no person score 125%
+[0;32mI (121394) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-25%, no person score 125%
+[0;32mI (121774) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-28%, no person score 128%
+[0;32mI (122154) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-22%, no person score 122%
+[0;32mI (122534) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-21%, no person score 121%
+[0;32mI (122914) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-20%, no person score 120%
+[0;32mI (123294) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:-20%, no person score 120%
+[0;32mI (123674) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:36%, no person score 64%
+[0;32mI (124054) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Persona detectada...LED Prendida
+Image Captured
+
+person score:-41%, no person sco
