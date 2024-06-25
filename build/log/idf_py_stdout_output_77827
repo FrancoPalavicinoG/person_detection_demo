@@ -1,0 +1,6836 @@
+ets����2016��:22��SH�HH���0� (P�U��9}�ESETJI����0x12BSPI_TMQ}1ASH_�ꊕj
+confi֥�� b SP������
+cl�E���0x00,\E���0x00,�E���0x00,c.�����0x00	�}���i0x00��}���:0x0j
+modY'T�	�����div:LC!�+�:0x3f����b╹�7524
+�+��0�007��0,lYK����2
+l+��0����0,leK�j
+l+��0Q0080�bb��:431SH(���y 0x���5
+[0;32mI (28) boot: ESP-IDF v5.3-dev-2747-g4f3cd0deb9 2nd stage bootloader[0m
+[0;32mI (28) boot: compile time Jun 18 2024 17:51:41[0m
+[0;32mI (30) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v1.0[0m
+[0;32mI (38) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (43) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (48) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (52) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (57) boot: Enabling RNG early entropy source...[0m
+[0;32mI (62) boot: Partition Table:[0m
+[0;32mI (66) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (73) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (81) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (88) boot:  2 factory          factory app      00 00 00010000 00180000[0m
+[0;32mI (96) boot: End of partition table[0m
+[0;32mI (100) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=5e72ch (386860) map[0m
+[0;32mI (208) esp_image: segment 1: paddr=0006e754 vaddr=3ffb0000 size=018c4h (  6340) load[0m
+[0;32mI (210) esp_image: segment 2: paddr=00070020 vaddr=400d0020 size=30f80h (200576) map[0m
+[0;32mI (265) esp_image: segment 3: paddr=000a0fa8 vaddr=3ffb18c4 size=01aa8h (  6824) load[0m
+[0;32mI (267) esp_image: segment 4: paddr=000a2a58 vaddr=40080000 size=10cd0h ( 68816) load[0m
+[0;32mI (300) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (300) boot: Disabling RNG early entropy source...[0m
+[0;32mI (312) cpu_start: Multicore app[0m
+[0;32mI (312) quad_psram: This chip is ESP32-D0WD[0m
+[0;32mI (312) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (314) esp_psram: Speed: 80MHz[0m
+[0;32mI (318) esp_psram: PSRAM initialized, cache is in low/high (2-core) mode.[0m
+[0;33mW (325) esp_psram: Virtual address not enough for PSRAM, map as much as we can. 4MB is mapped[0m
+[0;32mI (798) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (806) cpu_start: Pro cpu start user code[0m
+[0;32mI (806) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (806) app_init: Application information:[0m
+[0;32mI (809) app_init: Project name:     person_detection[0m
+[0;32mI (815) app_init: App version:      1[0m
+[0;32mI (819) app_init: Compile time:     Jun 18 2024 17:51:35[0m
+[0;32mI (825) app_init: ELF file SHA256:  9cce55718...[0m
+[0;32mI (830) app_init: ESP-IDF:          v5.3-dev-2747-g4f3cd0deb9[0m
+[0;32mI (837) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (841) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (846) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (851) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (858) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (864) heap_init: At 3FFB40F0 len 0002BF10 (175 KiB): DRAM[0m
+[0;32mI (871) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (877) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (883) heap_init: At 40090CD0 len 0000F330 (60 KiB): IRAM[0m
+[0;32mI (890) esp_psram: Adding pool of 4096K of PSRAM memory to heap allocator[0m
+[0;32mI (898) spi_flash: detected chip: generic[0m
+[0;32mI (902) spi_flash: flash io: qio[0m
+[0;33mW (906) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (917) main_task: Started on CPU0[0m
+[0;32mI (927) main_task: Calling app_main()[0m
+[0;32mI (927) gpio: GPIO[12]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (927) gpio: GPIO[13]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (937) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (967) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (967) cam_hal: cam init ok[0m
+[0;32mI (967) sccb: pin_sda 26 pin_scl 27[0m
+[0;32mI (977) sccb: sccb_i2c_port=1[0m
+[0;32mI (977) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1017) camera: Detected camera at address=0x30[0m
+[0;32mI (1017) camera: Detected OV2640 camera[0m
+[0;32mI (1017) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (1087) esp32 ll_cam: node_size: 3072, nodes_per_line: 1, lines_per_node: 4, dma_half_buffer_min:  3072, dma_half_buffer: 12288,lines_per_half_buffer: 16, dma_buffer_size: 24576, image_size: 18432[0m
+[0;32mI (1097) cam_hal: buffer_size: 24576, half_buffer_size: 12288, node_buffer_size: 3072, node_cnt: 8, total_cnt: 1[0m
+[0;32mI (1107) cam_hal: Allocating 9216 Byte frame buffer in PSRAM[0m
+[0;32mI (1117) cam_hal: Allocating 9216 Byte frame buffer in PSRAM[0m
+[0;32mI (1117) cam_hal: cam config ok[0m
+[0;32mI (1127) ov2640: Set PLL: clk_2x: 0, clk_div: 3, pclk_auto: 1, pclk_div: 8[0m
+Camera Initialized
+
+Image Captured
+
+person score:29%, no person score 71%
+Boton trueNo hay persona detectada
+Image Captured
+
+person score:28%, no person score 72%
+No hay persona detectada
+Image Captured
+
+person score:26%, no person score 74%
+No hay persona detectada
+Image Captured
+
+person score:25%, no person score 75%
+No hay persona detectada
+Image Captured
+
+person score:27%, no person score 73%
+No hay persona detectada
+Image Captured
+
+person score:27%, no person score 73%
+No hay persona detectada
+Image Captured
+
+person score:28%, no person score 72%
+No hay persona detectada
+Image Captured
+
+person score:31%, no person score 69%
+No hay persona detectada
+Image Captured
+
+person score:32%, no person score 68%
+No hay persona detectada
+Image Captured
+
+person score:25%, no person score 75%
+No hay persona detectada
+Image Captured
+
+person score:29%, no person score 71%
+No hay persona detectada
+Image Captured
+
+person score:21%, no person score 79%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:17%, no person score 83%
+No hay persona detectada
+Image Captured
+
+person score:18%, no person score 82%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:18%, no person score 82%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:17%, no person score 83%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:12%, no person score 88%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:11%, no person score 89%
+Boton FalseNo hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+Boton trueNo hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:12%, no person score 88%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:18%, no person score 82%
+No hay persona detectada
+Image Captured
+
+person score:28%, no person score 72%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:17%, no person score 83%
+No hay persona detectada
+Image Captured
+
+person score:18%, no person score 82%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:20%, no person score 80%
+No hay persona detectada
+Image Captured
+
+person score:11%, no person score 89%
+No hay persona detectada
+Image Captured
+
+person score:8%, no person score 92%
+No hay persona detectada
+Image Captured
+
+person score:10%, no person score 90%
+No hay persona detectada
+Image Captured
+
+person score:60%, no person score 40%
+No hay persona detectada
+Image Captured
+
+person score:35%, no person score 65%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:19%, no person score 81%
+No hay persona detectada
+Image Captured
+
+person score:19%, no person score 81%
+No hay persona detectada
+Image Captured
+
+person score:18%, no person score 82%
+No hay persona detectada
+Image Captured
+
+person score:18%, no person score 82%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:20%, no person score 80%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:19%, no person score 81%
+No hay persona detectada
+Image Captured
+
+person score:28%, no person score 72%
+No hay persona detectada
+Image Captured
+
+person score:18%, no person score 82%
+No hay persona detectada
+Image Captured
+
+person score:23%, no person score 77%
+No hay persona detectada
+Image Captured
+
+person score:18%, no person score 82%
+No hay persona detectada
+Image Captured
+
+person score:18%, no person score 82%
+No hay persona detectada
+Image Captured
+
+person score:18%, no person score 82%
+No hay persona detectada
+Image Captured
+
+person score:17%, no person score 83%
+No hay persona detectada
+Image Captured
+
+person score:22%, no person score 78%
+No hay persona detectada
+Image Captured
+
+person score:32%, no person score 68%
+No hay persona detectada
+Image Captured
+
+person score:34%, no person score 66%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:20%, no person score 80%
+No hay persona detectada
+Image Captured
+
+person score:40%, no person score 60%
+No hay persona detectada
+Image Captured
+
+person score:18%, no person score 82%
+No hay persona detectada
+Image Captured
+
+person score:19%, no person score 81%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:17%, no person score 83%
+Boton FalseNo hay persona detectada
+Image Captured
+
+person score:20%, no person score 80%
+Boton trueNo hay persona detectada
+Image Captured
+
+person score:21%, no person score 79%
+No hay persona detectada
+Image Captured
+
+person score:18%, no person score 82%
+No hay persona detectada
+Image Captured
+
+person score:18%, no person score 82%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:19%, no person score 81%
+No hay persona detectada
+Image Captured
+
+person score:24%, no person score 76%
+No hay persona detectada
+Image Captured
+
+person score:21%, no person score 79%
+No hay persona detectada
+Image Captured
+
+person score:24%, no person score 76%
+No hay persona detectada
+Image Captured
+
+person score:20%, no person score 80%
+No hay persona detectada
+Image Captured
+
+person score:12%, no person score 88%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:20%, no person score 80%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:29%, no person score 71%
+No hay persona detectada
+Image Captured
+
+person score:21%, no person score 79%
+No hay persona detectada
+Image Captured
+
+person score:19%, no person score 81%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:11%, no person score 89%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:20%, no person score 80%
+No hay persona detectada
+Image Captured
+
+person score:19%, no person score 81%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:17%, no person score 83%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:22%, no person score 78%
+No hay persona detectada
+Image Captured
+
+person score:21%, no person score 79%
+No hay persona detectada
+Image Captured
+
+person score:62%, no person score 38%
+No hay persona detectada
+Image Captured
+
+person score:36%, no person score 64%
+No hay persona detectada
+Image Captured
+
+person score:55%, no person score 45%
+No hay persona detectada
+Image Captured
+
+person score:61%, no person score 39%
+No hay persona detectada
+Image Captured
+
+person score:60%, no person score 40%
+No hay persona detectada
+Image Captured
+
+person score:75%, no person score 25%
+Persona detectada...LED Prendida
+Image Captured
+
+person score:34%, no person score 66%
+No hay persona detectada
+Image Captured
+
+person score:41%, no person score 59%
+No hay persona detectada
+Image Captured
+
+person score:37%, no person score 63%
+No hay persona detectada
+Image Captured
+
+person score:66%, no person score 34%
+No hay persona detectada
+Image Captured
+
+person score:57%, no person score 43%
+Boton FalseNo hay persona detectada
+Image Captured
+
+person score:77%, no person score 23%
+Boton truePersona detectada...LED Prendida
+Image Captured
+
+person score:30%, no person score 70%
+No hay persona detectada
+Image Captured
+
+person score:61%, no person score 39%
+No hay persona detectada
+Image Captured
+
+person score:56%, no person score 44%
+No hay persona detectada
+Image Captured
+
+person score:82%, no person score 18%
+Persona detectada...LED Prendida
+Image Captured
+
+person score:61%, no person score 39%
+No hay persona detectada
+Image Captured
+
+person score:73%, no person score 27%
+Persona detectada...LED Prendida
+Image Captured
+
+person score:75%, no person score 25%
+Persona detectada...LED Prendida
+Image Captured
+
+person score:66%, no person score 34%
+No hay persona detectada
+Image Captured
+
+person score:81%, no person score 19%
+Persona detectada...LED Prendida
+Image Captured
+
+person score:80%, no person score 20%
+Persona detectada...LED Prendida
+Image Captured
+
+person score:69%, no person score 31%
+No hay persona detectada
+Image Captured
+
+person score:79%, no person score 21%
+Persona detectada...LED Prendida
+Image Captured
+
+person score:53%, no person score 47%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:36%, no person score 64%
+No hay persona detectada
+Image Captured
+
+person score:39%, no person score 61%
+No hay persona detectada
+Image Captured
+
+person score:20%, no person score 80%
+Boton FalseNo hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+Boton trueNo hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+Boton FalseNo hay persona detectada
+Image Captured
+
+person score:63%, no person score 37%
+Boton FalseNo hay persona detectada
+Image Captured
+
+person score:44%, no person score 56%
+Boton FalseNo hay persona detectada
+Image Captured
+
+person score:33%, no person score 67%
+Boton trueNo hay persona detectada
+Image Captured
+
+person score:35%, no person score 65%
+No hay persona detectada
+Image Captured
+
+person score:43%, no person score 57%
+No hay persona detectada
+Image Captured
+
+person score:29%, no person score 71%
+No hay persona detectada
+Image Captured
+
+person score:41%, no person score 59%
+No hay persona detectada
+Image Captured
+
+person score:38%, no person score 62%
+No hay persona detectada
+Image Captured
+
+person score:65%, no person score 35%
+Boton FalseNo hay persona detectada
+Image Captured
+
+person score:33%, no person score 67%
+Boton trueNo hay persona detectada
+Image Captured
+
+person score:69%, no person score 31%
+No hay persona detectada
+Image Captured
+
+person score:27%, no person score 73%
+No hay persona detectada
+Image Captured
+
+person score:67%, no person score 33%
+No hay persona detectada
+Image Captured
+
+person score:61%, no person score 39%
+No hay persona detectada
+Image Captured
+
+person score:47%, no person score 53%
+No hay persona detectada
+Image Captured
+
+person score:40%, no person score 60%
+No hay persona detectada
+Image Captured
+
+person score:47%, no person score 53%
+No hay persona detectada
+Image Captured
+
+person score:70%, no person score 30%
+Persona detectada...LED Prendida
+Image Captured
+
+person score:17%, no person score 83%
+No hay persona detectada
+Image Captured
+
+person score:25%, no person score 75%
+No hay persona detectada
+Image Captured
+
+person score:18%, no person score 82%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:17%, no person score 83%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:17%, no person score 83%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:22%, no person score 78%
+No hay persona detectada
+Image Captured
+
+person score:59%, no person score 41%
+No hay persona detectada
+Image Captured
+
+person score:56%, no person score 44%
+No hay persona detectada
+Image Captured
+
+person score:45%, no person score 55%
+No hay persona detectada
+Image Captured
+
+person score:30%, no person score 70%
+No hay persona detectada
+Image Captured
+
+person score:32%, no person score 68%
+No hay persona detectada
+Image Captured
+
+person score:34%, no person score 66%
+No hay persona detectada
+Image Captured
+
+person score:31%, no person score 69%
+No hay persona detectada
+Image Captured
+
+person score:42%, no person score 58%
+No hay persona detectada
+Image Captured
+
+person score:27%, no person score 73%
+No hay persona detectada
+Image Captured
+
+person score:32%, no person score 68%
+No hay persona detectada
+Image Captured
+
+person score:33%, no person score 67%
+No hay persona detectada
+Image Captured
+
+person score:36%, no person score 64%
+No hay persona detectada
+Image Captured
+
+person score:36%, no person score 64%
+No hay persona detectada
+Image Captured
+
+person score:39%, no person score 61%
+No hay persona detectada
+Image Captured
+
+person score:23%, no person score 77%
+No hay persona detectada
+Image Captured
+
+person score:68%, no person score 32%
+No hay persona detectada
+Image Captured
+
+person score:41%, no person score 59%
+No hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+No hay persona detectada
+Image Captured
+
+person score:51%, no person score 49%
+No hay persona detectada
+Image Captured
+
+person score:76%, no person score 24%
+Persona detectada...LED Prendida
+Image Captured
+
+person score:68%, no person score 32%
+No hay persona detectada
+Image Captured
+
+person score:72%, no person score 28%
+Persona detectada...LED Prendida
+Image Captured
+
+person score:64%, no person score 36%
+No hay persona detectada
+Image Captured
+
+person score:72%, no person score 28%
+Persona detectada...LED Prendida
+Image Captured
+
+person score:62%, no person score 38%
+No hay persona detectada
+Image Captured
+
+person score:58%, no person score 42%
+No hay persona detectada
+Image Captured
+
+person score:45%, no person score 55%
+No hay persona detectada
+Image Captured
+
+person score:51%, no person score 49%
+No hay persona detectada
+Image Captured
+
+person score:40%, no person score 60%
+No hay persona detectada
+Image Captured
+
+person score:55%, no person score 45%
+No hay persona detectada
+Image Captured
+
+person score:54%, no person score 46%
+No hay persona detectada
+Image Captured
+
+person score:40%, no person score 60%
+No hay persona detectada
+Image Captured
+
+person score:38%, no person score 62%
+No hay persona detectada
+Image Captured
+
+person score:35%, no person score 65%
+No hay persona detectada
+Image Captured
+
+person score:30%, no person score 70%
+No hay persona detectada
+Image Captured
+
+person score:36%, no person score 64%
+No hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+No hay persona detectada
+Image Captured
+
+person score:33%, no person score 67%
+No hay persona detectada
+Image Captured
+
+person score:30%, no person score 70%
+No hay persona detectada
+Image Captured
+
+person score:43%, no person score 57%
+No hay persona detectada
+Image Captured
+
+person score:45%, no person score 55%
+No hay persona detectada
+Image Captured
+
+person score:34%, no person score 66%
+No hay persona detectada
+Image Captured
+
+person score:53%, no person score 47%
+No hay persona detectada
+Image Captured
+
+person score:54%, no person score 46%
+No hay persona detectada
+Image Captured
+
+person score:49%, no person score 51%
+No hay persona detectada
+Image Captured
+
+person score:67%, no person score 33%
+No hay persona detectada
+Image Captured
+
+person score:73%, no person score 27%
+Persona detectada...LED Prendida
+Image Captured
+
+person score:75%, no person score 25%
+Persona detectada...LED Prendida
+Image Captured
+
+person score:81%, no person score 19%
+Boton FalsePersona detectada...LED Prendida
+Image Captured
+
+person score:68%, no person score 32%
+Boton trueNo hay persona detectada
+Image Captured
+
+person score:67%, no person score 33%
+No hay persona detectada
+Image Captured
+
+person score:66%, no person score 34%
+No hay persona detectada
+Image Captured
+
+person score:74%, no person score 26%
+Persona detectada...LED Prendida
+Image Captured
+
+person score:25%, no person score 75%
+No hay persona detectada
+Image Captured
+
+person score:25%, no person score 75%
+No hay persona detectada
+Image Captured
+
+person score:23%, no person score 77%
+No hay persona detectada
+Image Captured
+
+person score:22%, no person score 78%
+No hay persona detectada
+Image Captured
+
+person score:18%, no person score 82%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:25%, no person score 75%
+No hay persona detectada
+Image Captured
+
+person score:21%, no person score 79%
+No hay persona detectada
+Image Captured
+
+person score:27%, no person score 73%
+No hay persona detectada
+Image Captured
+
+person score:26%, no person score 74%
+No hay persona detectada
+Image Captured
+
+person score:21%, no person score 79%
+No hay persona detectada
+Image Captured
+
+person score:25%, no person score 75%
+No hay persona detectada
+Image Captured
+
+person score:22%, no person score 78%
+No hay persona detectada
+Image Captured
+
+person score:22%, no person score 78%
+No hay persona detectada
+Image Captured
+
+person score:21%, no person score 79%
+No hay persona detectada
+Image Captured
+
+person score:25%, no person score 75%
+No hay persona detectada
+Image Captured
+
+person score:26%, no person score 74%
+No hay persona detectada
+Image Captured
+
+person score:25%, no person score 75%
+No hay persona detectada
+Image Captured
+
+person score:21%, no person score 79%
+No hay persona detectada
+Image Captured
+
+person score:21%, no person score 79%
+No hay persona detectada
+Image Captured
+
+person score:20%, no person score 80%
+No hay persona detectada
+Image Captured
+
+person score:24%, no person score 76%
+No hay persona detectada
+Image Captured
+
+person score:20%, no person score 80%
+No hay persona detectada
+Image Captured
+
+person score:18%, no person score 82%
+No hay persona detectada
+Image Captured
+
+person score:19%, no person score 81%
+No hay persona detectada
+Image Captured
+
+person score:20%, no person score 80%
+No hay persona detectada
+Image Captured
+
+person score:20%, no person score 80%
+No hay persona detectada
+Image Captured
+
+person score:19%, no person score 81%
+No hay persona detectada
+Image Captured
+
+person score:25%, no person score 75%
+No hay persona detectada
+Image Captured
+
+person score:22%, no person score 78%
+No hay persona detectada
+Image Captured
+
+person score:26%, no person score 74%
+No hay persona detectada
+Image Captured
+
+person score:24%, no person score 76%
+No hay persona detectada
+Image Captured
+
+person score:25%, no person score 75%
+No hay persona detectada
+Image Captured
+
+person score:26%, no person score 74%
+No hay persona detectada
+Image Captured
+
+person score:24%, no person score 76%
+No hay persona detectada
+Image Captured
+
+person score:25%, no person score 75%
+No hay persona detectada
+Image Captured
+
+person score:26%, no person score 74%
+No hay persona detectada
+Image Captured
+
+person score:26%, no person score 74%
+No hay persona detectada
+Image Captured
+
+person score:25%, no person score 75%
+No hay persona detectada
+Image Captured
+
+person score:21%, no person score 79%
+No hay persona detectada
+Image Captured
+
+person score:20%, no person score 80%
+No hay persona detectada
+Image Captured
+
+person score:21%, no person score 79%
+No hay persona detectada
+Image Captured
+
+person score:23%, no person score 77%
+No hay persona detectada
+Image Captured
+
+person score:23%, no person score 77%
+No hay persona detectada
+Image Captured
+
+person score:23%, no person score 77%
+No hay persona detectada
+Image Captured
+
+person score:25%, no person score 75%
+No hay persona detectada
+Image Captured
+
+person score:24%, no person score 76%
+No hay persona detectada
+Image Captured
+
+person score:24%, no person score 76%
+No hay persona detectada
+Image Captured
+
+person score:27%, no person score 73%
+No hay persona detectada
+Image Captured
+
+person score:27%, no person score 73%
+No hay persona detectada
+Image Captured
+
+person score:27%, no person score 73%
+No hay persona detectada
+Image Captured
+
+person score:23%, no person score 77%
+No hay persona detectada
+Image Captured
+
+person score:26%, no person score 74%
+No hay persona detectada
+Image Captured
+
+person score:25%, no person score 75%
+No hay persona detectada
+Image Captured
+
+person score:24%, no person score 76%
+No hay persona detectada
+Image Captured
+
+person score:27%, no person score 73%
+No hay persona detectada
+Image Captured
+
+person score:30%, no person score 70%
+No hay persona detectada
+Image Captured
+
+person score:24%, no person score 76%
+No hay persona detectada
+Image Captured
+
+person score:24%, no person score 76%
+No hay persona detectada
+Image Captured
+
+person score:25%, no person score 75%
+No hay persona detectada
+Image Captured
+
+person score:22%, no person score 78%
+No hay persona detectada
+Image Captured
+
+person score:23%, no person score 77%
+No hay persona detectada
+Image Captured
+
+person score:24%, no person score 76%
+No hay persona detectada
+Image Captured
+
+person score:24%, no person score 76%
+No hay persona detectada
+Image Captured
+
+person score:24%, no person score 76%
+No hay persona detectada
+Image Captured
+
+person score:26%, no person score 74%
+No hay persona detectada
+Image Captured
+
+person score:25%, no person score 75%
+No hay persona detectada
+Image Captured
+
+person score:26%, no person score 74%
+No hay persona detectada
+Image Captured
+
+person score:26%, no person score 74%
+No hay persona detectada
+Image Captured
+
+person score:27%, no person score 73%
+No hay persona detectada
+Image Captured
+
+person score:26%, no person score 74%
+No hay persona detectada
+Image Captured
+
+person score:26%, no person score 74%
+No hay persona detectada
+Image Captured
+
+person score:25%, no person score 75%
+No hay persona detectada
+Image Captured
+
+person score:27%, no person score 73%
+No hay persona detectada
+Image Captured
+
+person score:25%, no person score 75%
+No hay persona detectada
+Image Captured
+
+person score:27%, no person score 73%
+No hay persona detectada
+Image Captured
+
+person score:25%, no person score 75%
+No hay persona detectada
+Image Captured
+
+person score:24%, no person score 76%
+No hay persona detectada
+Image Captured
+
+person score:29%, no person score 71%
+No hay persona detectada
+Image Captured
+
+person score:29%, no person score 71%
+No hay persona detectada
+Image Captured
+
+person score:26%, no person score 74%
+No hay persona detectada
+Image Captured
+
+person score:27%, no person score 73%
+No hay persona detectada
+Image Captured
+
+person score:26%, no person score 74%
+No hay persona detectada
+Image Captured
+
+person score:27%, no person score 73%
+No hay persona detectada
+Image Captured
+
+person score:28%, no person score 72%
+No hay persona detectada
+Image Captured
+
+person score:26%, no person score 74%
+No hay persona detectada
+Image Captured
+
+person score:27%, no person score 73%
+No hay persona detectada
+Image Captured
+
+person score:28%, no person score 72%
+No hay persona detectada
+Image Captured
+
+person score:27%, no person score 73%
+No hay persona detectada
+Image Captured
+
+person score:24%, no person score 76%
+No hay persona detectada
+Image Captured
+
+person score:34%, no person score 66%
+No hay persona detectada
+Image Captured
+
+person score:28%, no person score 72%
+No hay persona detectada
+Image Captured
+
+person score:28%, no person score 72%
+No hay persona detectada
+Image Captured
+
+person score:24%, no person score 76%
+No hay persona detectada
+Image Captured
+
+person score:26%, no person score 74%
+No hay persona detectada
+Image Captured
+
+person score:20%, no person score 80%
+No hay persona detectada
+Image Captured
+
+person score:17%, no person score 83%
+No hay persona detectada
+Image Captured
+
+person score:26%, no person score 74%
+No hay persona detectada
+Image Captured
+
+person score:39%, no person score 61%
+No hay persona detectada
+Image Captured
+
+person score:45%, no person score 55%
+No hay persona detectada
+Image Captured
+
+person score:37%, no person score 63%
+No hay persona detectada
+Image Captured
+
+person score:27%, no person score 73%
+No hay persona detectada
+Image Captured
+
+person score:32%, no person score 68%
+No hay persona detectada
+Image Captured
+
+person score:41%, no person score 59%
+No hay persona detectada
+Image Captured
+
+person score:31%, no person score 69%
+No hay persona detectada
+Image Captured
+
+person score:36%, no person score 64%
+No hay persona detectada
+Image Captured
+
+person score:35%, no person score 65%
+No hay persona detectada
+Image Captured
+
+person score:37%, no person score 63%
+No hay persona detectada
+Image Captured
+
+person score:43%, no person score 57%
+No hay persona detectada
+Image Captured
+
+person score:44%, no person score 56%
+No hay persona detectada
+Image Captured
+
+person score:41%, no person score 59%
+No hay persona detectada
+Image Captured
+
+person score:34%, no person score 66%
+No hay persona detectada
+Image Captured
+
+person score:45%, no person score 55%
+No hay persona detectada
+Image Captured
+
+person score:47%, no person score 53%
+No hay persona detectada
+Image Captured
+
+person score:47%, no person score 53%
+No hay persona detectada
+Image Captured
+
+person score:45%, no person score 55%
+No hay persona detectada
+Image Captured
+
+person score:37%, no person score 63%
+No hay persona detectada
+Image Captured
+
+person score:44%, no person score 56%
+No hay persona detectada
+Image Captured
+
+person score:43%, no person score 57%
+No hay persona detectada
+Image Captured
+
+person score:40%, no person score 60%
+No hay persona detectada
+Image Captured
+
+person score:49%, no person score 51%
+No hay persona detectada
+Image Captured
+
+person score:42%, no person score 58%
+No hay persona detectada
+Image Captured
+
+person score:33%, no person score 67%
+No hay persona detectada
+Image Captured
+
+person score:41%, no person score 59%
+No hay persona detectada
+Image Captured
+
+person score:38%, no person score 62%
+No hay persona detectada
+Image Captured
+
+person score:40%, no person score 60%
+No hay persona detectada
+Image Captured
+
+person score:44%, no person score 56%
+No hay persona detectada
+Image Captured
+
+person score:45%, no person score 55%
+No hay persona detectada
+Image Captured
+
+person score:43%, no person score 57%
+No hay persona detectada
+Image Captured
+
+person score:43%, no person score 57%
+No hay persona detectada
+Image Captured
+
+person score:37%, no person score 63%
+No hay persona detectada
+Image Captured
+
+person score:43%, no person score 57%
+No hay persona detectada
+Image Captured
+
+person score:40%, no person score 60%
+No hay persona detectada
+Image Captured
+
+person score:36%, no person score 64%
+No hay persona detectada
+Image Captured
+
+person score:40%, no person score 60%
+No hay persona detectada
+Image Captured
+
+person score:41%, no person score 59%
+No hay persona detectada
+Image Captured
+
+person score:44%, no person score 56%
+No hay persona detectada
+Image Captured
+
+person score:37%, no person score 63%
+No hay persona detectada
+Image Captured
+
+person score:37%, no person score 63%
+No hay persona detectada
+Image Captured
+
+person score:30%, no person score 70%
+No hay persona detectada
+Image Captured
+
+person score:39%, no person score 61%
+No hay persona detectada
+Image Captured
+
+person score:38%, no person score 62%
+No hay persona detectada
+Image Captured
+
+person score:37%, no person score 63%
+No hay persona detectada
+Image Captured
+
+person score:37%, no person score 63%
+No hay persona detectada
+Image Captured
+
+person score:33%, no person score 67%
+No hay persona detectada
+Image Captured
+
+person score:40%, no person score 60%
+No hay persona detectada
+Image Captured
+
+person score:37%, no person score 63%
+No hay persona detectada
+Image Captured
+
+person score:34%, no person score 66%
+No hay persona detectada
+Image Captured
+
+person score:31%, no person score 69%
+No hay persona detectada
+Image Captured
+
+person score:35%, no person score 65%
+No hay persona detectada
+Image Captured
+
+person score:34%, no person score 66%
+No hay persona detectada
+Image Captured
+
+person score:34%, no person score 66%
+No hay persona detectada
+Image Captured
+
+person score:44%, no person score 56%
+No hay persona detectada
+Image Captured
+
+person score:39%, no person score 61%
+No hay persona detectada
+Image Captured
+
+person score:35%, no person score 65%
+No hay persona detectada
+Image Captured
+
+person score:33%, no person score 67%
+No hay persona detectada
+Image Captured
+
+person score:29%, no person score 71%
+No hay persona detectada
+Image Captured
+
+person score:34%, no person score 66%
+No hay persona detectada
+Image Captured
+
+person score:34%, no person score 66%
+No hay persona detectada
+Image Captured
+
+person score:34%, no person score 66%
+No hay persona detectada
+Image Captured
+
+person score:39%, no person score 61%
+No hay persona detectada
+Image Captured
+
+person score:35%, no person score 65%
+No hay persona detectada
+Image Captured
+
+person score:36%, no person score 64%
+No hay persona detectada
+Image Captured
+
+person score:32%, no person score 68%
+No hay persona detectada
+Image Captured
+
+person score:34%, no person score 66%
+No hay persona detectada
+Image Captured
+
+person score:37%, no person score 63%
+No hay persona detectada
+Image Captured
+
+person score:34%, no person score 66%
+No hay persona detectada
+Image Captured
+
+person score:25%, no person score 75%
+No hay persona detectada
+Image Captured
+
+person score:19%, no person score 81%
+No hay persona detectada
+Image Captured
+
+person score:19%, no person score 81%
+No hay persona detectada
+Image Captured
+
+person score:21%, no person score 79%
+No hay persona detectada
+Image Captured
+
+person score:47%, no person score 53%
+No hay persona detectada
+Image Captured
+
+person score:39%, no person score 61%
+No hay persona detectada
+Image Captured
+
+person score:61%, no person score 39%
+No hay persona detectada
+Image Captured
+
+person score:55%, no person score 45%
+No hay persona detectada
+Image Captured
+
+person score:71%, no person score 29%
+Persona detectada...LED Prendida
+Image Captured
+
+person score:80%, no person score 20%
+Persona detectada...LED Prendida
+Image Captured
+
+person score:69%, no person score 31%
+No hay persona detectada
+Image Captured
+
+person score:72%, no person score 28%
+Persona detectada...LED Prendida
+Image Captured
+
+person score:72%, no person score 28%
+Persona detectada...LED Prendida
+Image Captured
+
+person score:73%, no person score 27%
+Persona detectada...LED Prendida
+Image Captured
+
+person score:62%, no person score 38%
+No hay persona detectada
+Image Captured
+
+person score:62%, no person score 38%
+No hay persona detectada
+Image Captured
+
+person score:61%, no person score 39%
+No hay persona detectada
+Image Captured
+
+person score:47%, no person score 53%
+No hay persona detectada
+Image Captured
+
+person score:61%, no person score 39%
+No hay persona detectada
+Image Captured
+
+person score:58%, no person score 42%
+No hay persona detectada
+Image Captured
+
+person score:72%, no person score 28%
+Persona detectada...LED Prendida
+Image Captured
+
+person score:58%, no person score 42%
+No hay persona detectada
+Image Captured
+
+person score:23%, no person score 77%
+No hay persona detectada
+Image Captured
+
+person score:26%, no person score 74%
+No hay persona detectada
+Image Captured
+
+person score:17%, no person score 83%
+No hay persona detectada
+Image Captured
+
+person score:17%, no person score 83%
+No hay persona detectada
+Image Captured
+
+person score:18%, no person score 82%
+No hay persona detectada
+Image Captured
+
+person score:18%, no person score 82%
+No hay persona detectada
+Image Captured
+
+person score:19%, no person score 81%
+No hay persona detectada
+Image Captured
+
+person score:20%, no person score 80%
+No hay persona detectada
+Image Captured
+
+person score:21%, no person score 79%
+No hay persona detectada
+Image Captured
+
+person score:21%, no person score 79%
+No hay persona detectada
+Image Captured
+
+person score:53%, no person score 47%
+No hay persona detectada
+Image Captured
+
+person score:47%, no person score 53%
+No hay persona detectada
+Image Captured
+
+person score:49%, no person score 51%
+No hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+No hay persona detectada
+Image Captured
+
+person score:49%, no person score 51%
+No hay persona detectada
+Image Captured
+
+person score:47%, no person score 53%
+No hay persona detectada
+Image Captured
+
+person score:49%, no person score 51%
+No hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+No hay persona detectada
+Image Captured
+
+person score:49%, no person score 51%
+No hay persona detectada
+Image Captured
+
+person score:49%, no person score 51%
+No hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+No hay persona detectada
+Image Captured
+
+person score:49%, no person score 51%
+No hay persona detectada
+Image Captured
+
+person score:50%, no person score 50%
+No hay persona detectada
+Image Captured
+
+person score:47%, no person score 53%
+No hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+No hay persona detectada
+Image Captured
+
+person score:50%, no person score 50%
+No hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+No hay persona detectada
+Image Captured
+
+person score:51%, no person score 49%
+No hay persona detectada
+Image Captured
+
+person score:50%, no person score 50%
+No hay persona detectada
+Image Captured
+
+person score:46%, no person score 54%
+No hay persona detectada
+Image Captured
+
+person score:46%, no person score 54%
+No hay persona detectada
+Image Captured
+
+person score:46%, no person score 54%
+No hay persona detectada
+Image Captured
+
+person score:47%, no person score 53%
+No hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+No hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+No hay persona detectada
+Image Captured
+
+person score:51%, no person score 49%
+No hay persona detectada
+Image Captured
+
+person score:49%, no person score 51%
+No hay persona detectada
+Image Captured
+
+person score:46%, no person score 54%
+No hay persona detectada
+Image Captured
+
+person score:49%, no person score 51%
+No hay persona detectada
+Image Captured
+
+person score:49%, no person score 51%
+No hay persona detectada
+Image Captured
+
+person score:50%, no person score 50%
+No hay persona detectada
+Image Captured
+
+person score:50%, no person score 50%
+No hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+No hay persona detectada
+Image Captured
+
+person score:46%, no person score 54%
+No hay persona detectada
+Image Captured
+
+person score:52%, no person score 48%
+No hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+No hay persona detectada
+Image Captured
+
+person score:50%, no person score 50%
+No hay persona detectada
+Image Captured
+
+person score:50%, no person score 50%
+No hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+No hay persona detectada
+Image Captured
+
+person score:51%, no person score 49%
+No hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+No hay persona detectada
+Image Captured
+
+person score:50%, no person score 50%
+No hay persona detectada
+Image Captured
+
+person score:49%, no person score 51%
+No hay persona detectada
+Image Captured
+
+person score:50%, no person score 50%
+No hay persona detectada
+Image Captured
+
+person score:49%, no person score 51%
+No hay persona detectada
+Image Captured
+
+person score:50%, no person score 50%
+No hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+No hay persona detectada
+Image Captured
+
+person score:50%, no person score 50%
+No hay persona detectada
+Image Captured
+
+person score:51%, no person score 49%
+No hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+No hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+No hay persona detectada
+Image Captured
+
+person score:50%, no person score 50%
+No hay persona detectada
+Image Captured
+
+person score:50%, no person score 50%
+No hay persona detectada
+Image Captured
+
+person score:50%, no person score 50%
+No hay persona detectada
+Image Captured
+
+person score:49%, no person score 51%
+No hay persona detectada
+Image Captured
+
+person score:50%, no person score 50%
+No hay persona detectada
+Image Captured
+
+person score:50%, no person score 50%
+No hay persona detectada
+Image Captured
+
+person score:50%, no person score 50%
+No hay persona detectada
+Image Captured
+
+person score:49%, no person score 51%
+No hay persona detectada
+Image Captured
+
+person score:49%, no person score 51%
+No hay persona detectada
+Image Captured
+
+person score:50%, no person score 50%
+No hay persona detectada
+Image Captured
+
+person score:49%, no person score 51%
+No hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+No hay persona detectada
+Image Captured
+
+person score:49%, no person score 51%
+No hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+No hay persona detectada
+Image Captured
+
+person score:50%, no person score 50%
+No hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+No hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+No hay persona detectada
+Image Captured
+
+person score:50%, no person score 50%
+No hay persona detectada
+Image Captured
+
+person score:51%, no person score 49%
+No hay persona detectada
+Image Captured
+
+person score:51%, no person score 49%
+No hay persona detectada
+Image Captured
+
+person score:52%, no person score 48%
+No hay persona detectada
+Image Captured
+
+person score:50%, no person score 50%
+No hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+No hay persona detectada
+Image Captured
+
+person score:50%, no person score 50%
+No hay persona detectada
+Image Captured
+
+person score:50%, no person score 50%
+No hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+No hay persona detectada
+Image Captured
+
+person score:51%, no person score 49%
+No hay persona detectada
+Image Captured
+
+person score:49%, no person score 51%
+No hay persona detectada
+Image Captured
+
+person score:50%, no person score 50%
+No hay persona detectada
+Image Captured
+
+person score:51%, no person score 49%
+No hay persona detectada
+Image Captured
+
+person score:49%, no person score 51%
+No hay persona detectada
+Image Captured
+
+person score:49%, no person score 51%
+No hay persona detectada
+Image Captured
+
+person score:47%, no person score 53%
+No hay persona detectada
+Image Captured
+
+person score:49%, no person score 51%
+No hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+No hay persona detectada
+Image Captured
+
+person score:50%, no person score 50%
+No hay persona detectada
+Image Captured
+
+person score:50%, no person score 50%
+No hay persona detectada
+Image Captured
+
+person score:50%, no person score 50%
+No hay persona detectada
+Image Captured
+
+person score:52%, no person score 48%
+No hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+No hay persona detectada
+Image Captured
+
+person score:50%, no person score 50%
+No hay persona detectada
+Image Captured
+
+person score:50%, no person score 50%
+No hay persona detectada
+Image Captured
+
+person score:49%, no person score 51%
+No hay persona detectada
+Image Captured
+
+person score:47%, no person score 53%
+No hay persona detectada
+Image Captured
+
+person score:49%, no person score 51%
+No hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+No hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+No hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+No hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+No hay persona detectada
+Image Captured
+
+person score:49%, no person score 51%
+No hay persona detectada
+Image Captured
+
+person score:52%, no person score 48%
+No hay persona detectada
+Image Captured
+
+person score:50%, no person score 50%
+No hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+No hay persona detectada
+Image Captured
+
+person score:51%, no person score 49%
+No hay persona detectada
+Image Captured
+
+person score:50%, no person score 50%
+No hay persona detectada
+Image Captured
+
+person score:49%, no person score 51%
+No hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+No hay persona detectada
+Image Captured
+
+person score:46%, no person score 54%
+No hay persona detectada
+Image Captured
+
+person score:49%, no person score 51%
+No hay persona detectada
+Image Captured
+
+person score:49%, no person score 51%
+No hay persona detectada
+Image Captured
+
+person score:49%, no person score 51%
+No hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+No hay persona detectada
+Image Captured
+
+person score:49%, no person score 51%
+No hay persona detectada
+Image Captured
+
+person score:50%, no person score 50%
+No hay persona detectada
+Image Captured
+
+person score:51%, no person score 49%
+Boton FalseNo hay persona detectada
+Image Captured
+
+person score:50%, no person score 50%
+Boton trueNo hay persona detectada
+Image Captured
+
+person score:52%, no person score 48%
+No hay persona detectada
+Image Captured
+
+person score:50%, no person score 50%
+No hay persona detectada
+Image Captured
+
+person score:49%, no person score 51%
+Boton FalseNo hay persona detectada
+Image Captured
+
+person score:53%, no person score 47%
+Boton trueNo hay persona detectada
+Image Captured
+
+person score:49%, no person score 51%
+No hay persona detectada
+Image Captured
+
+person score:47%, no person score 53%
+No hay persona detectada
+Image Captured
+
+person score:50%, no person score 50%
+No hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+No hay persona detectada
+Image Captured
+
+person score:49%, no person score 51%
+No hay persona detectada
+Image Captured
+
+person score:50%, no person score 50%
+No hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+No hay persona detectada
+Image Captured
+
+person score:49%, no person score 51%
+No hay persona detectada
+Image Captured
+
+person score:50%, no person score 50%
+No hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+Boton FalseNo hay persona detectada
+Image Captured
+
+person score:50%, no person score 50%
+Boton trueNo hay persona detectada
+Image Captured
+
+person score:50%, no person score 50%
+No hay persona detectada
+Image Captured
+
+person score:50%, no person score 50%
+Boton FalseNo hay persona detectada
+Image Captured
+
+person score:49%, no person score 51%
+Boton FalseNo hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+Boton trueNo hay persona detectada
+Image Captured
+
+person score:50%, no person score 50%
+No hay persona detectada
+Image Captured
+
+person score:46%, no person score 54%
+Boton FalseNo hay persona detectada
+Image Captured
+
+person score:49%, no person score 51%
+Boton trueNo hay persona detectada
+Image Captured
+
+person score:50%, no person score 50%
+No hay persona detectada
+Image Captured
+
+person score:49%, no person score 51%
+Boton FalseNo hay persona detectada
+Image Captured
+
+person score:50%, no person score 50%
+Boton trueNo hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+No hay persona detectada
+Image Captured
+
+person score:52%, no person score 48%
+No hay persona detectada
+Image Captured
+
+person score:46%, no person score 54%
+No hay persona detectada
+Image Captured
+
+person score:49%, no person score 51%
+Boton FalseNo hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+Boton FalseNo hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+Boton trueNo hay persona detectada
+Image Captured
+
+person score:49%, no person score 51%
+No hay persona detectada
+Image Captured
+
+person score:49%, no person score 51%
+No hay persona detectada
+Image Captured
+
+person score:54%, no person score 46%
+Boton FalseNo hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+Boton trueNo hay persona detectada
+Image Captured
+
+person score:50%, no person score 50%
+No hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+No hay persona detectada
+Image Captured
+
+person score:52%, no person score 48%
+No hay persona detectada
+Image Captured
+
+person score:49%, no person score 51%
+No hay persona detectada
+Image Captured
+
+person score:49%, no person score 51%
+No hay persona detectada
+Image Captured
+
+person score:49%, no person score 51%
+No hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+No hay persona detectada
+Image Captured
+
+person score:49%, no person score 51%
+No hay persona detectada
+Image Captured
+
+person score:51%, no person score 49%
+No hay persona detectada
+Image Captured
+
+person score:52%, no person score 48%
+No hay persona detectada
+Image Captured
+
+person score:49%, no person score 51%
+No hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+No hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+No hay persona detectada
+Image Captured
+
+person score:46%, no person score 54%
+No hay persona detectada
+Image Captured
+
+person score:50%, no person score 50%
+No hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+No hay persona detectada
+Image Captured
+
+person score:51%, no person score 49%
+No hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+No hay persona detectada
+Image Captured
+
+person score:49%, no person score 51%
+No hay persona detectada
+Image Captured
+
+person score:52%, no person score 48%
+No hay persona detectada
+Image Captured
+
+person score:51%, no person score 49%
+No hay persona detectada
+Image Captured
+
+person score:49%, no person score 51%
+No hay persona detectada
+Image Captured
+
+person score:50%, no person score 50%
+No hay persona detectada
+Image Captured
+
+person score:50%, no person score 50%
+No hay persona detectada
+Image Captured
+
+person score:47%, no person score 53%
+No hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+No hay persona detectada
+Image Captured
+
+person score:46%, no person score 54%
+No hay persona detectada
+Image Captured
+
+person score:50%, no person score 50%
+No hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+No hay persona detectada
+Image Captured
+
+person score:50%, no person score 50%
+Boton FalseNo hay persona detectada
+Image Captured
+
+person score:47%, no person score 53%
+Boton trueNo hay persona detectada
+Image Captured
+
+person score:51%, no person score 49%
+No hay persona detectada
+Image Captured
+
+person score:47%, no person score 53%
+No hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+No hay persona detectada
+Image Captured
+
+person score:51%, no person score 49%
+No hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+Boton FalseNo hay persona detectada
+Image Captured
+
+person score:50%, no person score 50%
+Boton trueNo hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+No hay persona detectada
+Image Captured
+
+person score:50%, no person score 50%
+No hay persona detectada
+Image Captured
+
+person score:46%, no person score 54%
+No hay persona detectada
+Image Captured
+
+person score:49%, no person score 51%
+No hay persona detectada
+Image Captured
+
+person score:49%, no person score 51%
+No hay persona detectada
+Image Captured
+
+person score:49%, no person score 51%
+Boton FalseNo hay persona detectada
+Image Captured
+
+person score:47%, no person score 53%
+Boton trueNo hay persona detectada
+Image Captured
+
+person score:50%, no person score 50%
+No hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+No hay persona detectada
+Image Captured
+
+person score:49%, no person score 51%
+No hay persona detectada
+Image Captured
+
+person score:50%, no person score 50%
+No hay persona detectada
+Image Captured
+
+person score:49%, no person score 51%
+No hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+No hay persona detectada
+Image Captured
+
+person score:45%, no person score 55%
+No hay persona detectada
+Image Captured
+
+person score:47%, no person score 53%
+No hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+No hay persona detectada
+Image Captured
+
+person score:52%, no person score 48%
+No hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+No hay persona detectada
+Image Captured
+
+person score:52%, no person score 48%
+Boton FalseNo hay persona detectada
+Image Captured
+
+person score:49%, no person score 51%
+Boton trueNo hay persona detectada
+Image Captured
+
+person score:54%, no person score 46%
+No hay persona detectada
+Image Captured
+
+person score:52%, no person score 48%
+No hay persona detectada
+Image Captured
+
+person score:52%, no person score 48%
+No hay persona detectada
+Image Captured
+
+person score:52%, no person score 48%
+No hay persona detectada
+Image Captured
+
+person score:52%, no person score 48%
+No hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+No hay persona detectada
+Image Captured
+
+person score:49%, no person score 51%
+No hay persona detectada
+Image Captured
+
+person score:52%, no person score 48%
+No hay persona detectada
+Image Captured
+
+person score:51%, no person score 49%
+No hay persona detectada
+Image Captured
+
+person score:52%, no person score 48%
+No hay persona detectada
+Image Captured
+
+person score:49%, no person score 51%
+No hay persona detectada
+Image Captured
+
+person score:50%, no person score 50%
+No hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+No hay persona detectada
+Image Captured
+
+person score:47%, no person score 53%
+No hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+No hay persona detectada
+Image Captured
+
+person score:49%, no person score 51%
+No hay persona detectada
+Image Captured
+
+person score:47%, no person score 53%
+No hay persona detectada
+Image Captured
+
+person score:50%, no person score 50%
+No hay persona detectada
+Image Captured
+
+person score:52%, no person score 48%
+No hay persona detectada
+Image Captured
+
+person score:47%, no person score 53%
+No hay persona detectada
+Image Captured
+
+person score:49%, no person score 51%
+No hay persona detectada
+Image Captured
+
+person score:47%, no person score 53%
+No hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+No hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+No hay persona detectada
+Image Captured
+
+person score:50%, no person score 50%
+No hay persona detectada
+Image Captured
+
+person score:49%, no person score 51%
+No hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+No hay persona detectada
+Image Captured
+
+person score:50%, no person score 50%
+No hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+No hay persona detectada
+Image Captured
+
+person score:51%, no person score 49%
+No hay persona detectada
+Image Captured
+
+person score:49%, no person score 51%
+No hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+No hay persona detectada
+Image Captured
+
+person score:50%, no person score 50%
+No hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+No hay persona detectada
+Image Captured
+
+person score:49%, no person score 51%
+No hay persona detectada
+Image Captured
+
+person score:52%, no person score 48%
+Boton FalseNo hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+Boton trueNo hay persona detectada
+Image Captured
+
+person score:52%, no person score 48%
+No hay persona detectada
+Image Captured
+
+person score:52%, no person score 48%
+No hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+No hay persona detectada
+Image Captured
+
+person score:49%, no person score 51%
+No hay persona detectada
+Image Captured
+
+person score:50%, no person score 50%
+No hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+No hay persona detectada
+Image Captured
+
+person score:46%, no person score 54%
+No hay persona detectada
+Image Captured
+
+person score:47%, no person score 53%
+No hay persona detectada
+Image Captured
+
+person score:49%, no person score 51%
+No hay persona detectada
+Image Captured
+
+person score:49%, no person score 51%
+No hay persona detectada
+Image Captured
+
+person score:50%, no person score 50%
+No hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+No hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+Boton FalseNo hay persona detectada
+Image Captured
+
+person score:49%, no person score 51%
+Boton trueNo hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+No hay persona detectada
+Image Captured
+
+person score:51%, no person score 49%
+No hay persona detectada
+Image Captured
+
+person score:47%, no person score 53%
+No hay persona detectada
+Image Captured
+
+person score:50%, no person score 50%
+No hay persona detectada
+Image Captured
+
+person score:53%, no person score 47%
+No hay persona detectada
+Image Captured
+
+person score:47%, no person score 53%
+No hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+No hay persona detectada
+Image Captured
+
+person score:50%, no person score 50%
+No hay persona detectada
+Image Captured
+
+person score:46%, no person score 54%
+No hay persona detectada
+Image Captured
+
+person score:50%, no person score 50%
+No hay persona detectada
+Image Captured
+
+person score:50%, no person score 50%
+No hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+No hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+No hay persona detectada
+Image Captured
+
+person score:50%, no person score 50%
+No hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+No hay persona detectada
+Image Captured
+
+person score:49%, no person score 51%
+No hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+No hay persona detectada
+Image Captured
+
+person score:51%, no person score 49%
+No hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+No hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+No hay persona detectada
+Image Captured
+
+person score:49%, no person score 51%
+No hay persona detectada
+Image Captured
+
+person score:52%, no person score 48%
+No hay persona detectada
+Image Captured
+
+person score:47%, no person score 53%
+No hay persona detectada
+Image Captured
+
+person score:49%, no person score 51%
+No hay persona detectada
+Image Captured
+
+person score:50%, no person score 50%
+No hay persona detectada
+Image Captured
+
+person score:48%, no person score 52%
+No hay persona detectada
+Image Captured
+
+person score:45%, no person score 55%
+No hay persona detectada
+Image Captured
+
+person score:21%, no person score 79%
+No hay persona detectada
+Image Captured
+
+person score:17%, no person score 83%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:19%, no person score 81%
+Boton FalseNo hay persona detectada
+Image Captured
+
+person score:31%, no person score 69%
+Boton FalseNo hay persona detectada
+Image Captured
+
+person score:31%, no person score 69%
+Boton trueNo hay persona detectada
+Image Captured
+
+person score:28%, no person score 72%
+No hay persona detectada
+Image Captured
+
+person score:23%, no person score 77%
+No hay persona detectada
+Image Captured
+
+person score:22%, no person score 78%
+No hay persona detectada
+Image Captured
+
+person score:22%, no person score 78%
+No hay persona detectada
+Image Captured
+
+person score:27%, no person score 73%
+No hay persona detectada
+Image Captured
+
+person score:32%, no person score 68%
+No hay persona detectada
+Image Captured
+
+person score:35%, no person score 65%
+No hay persona detectada
+Image Captured
+
+person score:34%, no person score 66%
+No hay persona detectada
+Image Captured
+
+person score:21%, no person score 79%
+No hay persona detectada
+Image Captured
+
+person score:29%, no person score 71%
+No hay persona detectada
+Image Captured
+
+person score:35%, no person score 65%
+No hay persona detectada
+Image Captured
+
+person score:34%, no person score 66%
+No hay persona detectada
+Image Captured
+
+person score:37%, no person score 63%
+No hay persona detectada
+Image Captured
+
+person score:36%, no person score 64%
+No hay persona detectada
+Image Captured
+
+person score:40%, no person score 60%
+No hay persona detectada
+Image Captured
+
+person score:42%, no person score 58%
+No hay persona detectada
+Image Captured
+
+person score:36%, no person score 64%
+No hay persona detectada
+Image Captured
+
+person score:37%, no person score 63%
+No hay persona detectada
+Image Captured
+
+person score:27%, no person score 73%
+No hay persona detectada
+Image Captured
+
+person score:25%, no person score 75%
+No hay persona detectada
+Image Captured
+
+person score:33%, no person score 67%
+No hay persona detectada
+Image Captured
+
+person score:38%, no person score 62%
+No hay persona detectada
+Image Captured
+
+person score:22%, no person score 78%
+No hay persona detectada
+Image Captured
+
+person score:23%, no person score 77%
+No hay persona detectada
+Image Captured
+
+person score:19%, no person score 81%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:20%, no person score 80%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:23%, no person score 77%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:21%, no person score 79%
+No hay persona detectada
+Image Captured
+
+person score:28%, no person score 72%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:51%, no person score 49%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:11%, no person score 89%
+No hay persona detectada
+Image Captured
+
+person score:12%, no person score 88%
+No hay persona detectada
+Image Captured
+
+person score:21%, no person score 79%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:10%, no person score 90%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:11%, no person score 89%
+No hay persona detectada
+Image Captured
+
+person score:12%, no person score 88%
+No hay persona detectada
+Image Captured
+
+person score:20%, no person score 80%
+Boton FalseNo hay persona detectada
+Image Captured
+
+person score:18%, no person score 82%
+Boton trueNo hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:18%, no person score 82%
+No hay persona detectada
+Image Captured
+
+person score:24%, no person score 76%
+No hay persona detectada
+Image Captured
+
+person score:34%, no person score 66%
+No hay persona detectada
+Image Captured
+
+person score:20%, no person score 80%
+No hay persona detectada
+Image Captured
+
+person score:36%, no person score 64%
+No hay persona detectada
+Image Captured
+
+person score:54%, no person score 46%
+No hay persona detectada
+Image Captured
+
+person score:51%, no person score 49%
+No hay persona detectada
+Image Captured
+
+person score:52%, no person score 48%
+No hay persona detectada
+Image Captured
+
+person score:39%, no person score 61%
+No hay persona detectada
+Image Captured
+
+person score:53%, no person score 47%
+No hay persona detectada
+Image Captured
+
+person score:25%, no person score 75%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:12%, no person score 88%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:12%, no person score 88%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:12%, no person score 88%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:12%, no person score 88%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:12%, no person score 88%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:12%, no person score 88%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:12%, no person score 88%
+No hay persona detectada
+Image Captured
+
+person score:12%, no person score 88%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:9%, no person score 91%
+No hay persona detectada
+Image Captured
+
+person score:21%, no person score 79%
+No hay persona detectada
+Image Captured
+
+person score:21%, no person score 79%
+Boton FalseNo hay persona detectada
+Image Captured
+
+person score:21%, no person score 79%
+Boton trueNo hay persona detectada
+Image Captured
+
+person score:23%, no person score 77%
+No hay persona detectada
+Image Captured
+
+person score:22%, no person score 78%
+No hay persona detectada
+Image Captured
+
+person score:22%, no person score 78%
+No hay persona detectada
+Image Captured
+
+person score:18%, no person score 82%
+No hay persona detectada
+Image Captured
+
+person score:17%, no person score 83%
+No hay persona detectada
+Image Captured
+
+person score:17%, no person score 83%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:19%, no person score 81%
+No hay persona detectada
+Image Captured
+
+person score:17%, no person score 83%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:19%, no person score 81%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:17%, no person score 83%
+No hay persona detectada
+Image Captured
+
+person score:19%, no person score 81%
+No hay persona detectada
+Image Captured
+
+person score:17%, no person score 83%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:17%, no person score 83%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:18%, no person score 82%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:17%, no person score 83%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:17%, no person score 83%
+No hay persona detectada
+Image Captured
+
+person score:17%, no person score 83%
+No hay persona detectada
+Image Captured
+
+person score:17%, no person score 83%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:26%, no person score 74%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:20%, no person score 80%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:17%, no person score 83%
+No hay persona detectada
+Image Captured
+
+person score:17%, no person score 83%
+No hay persona detectada
+Image Captured
+
+person score:18%, no person score 82%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:17%, no person score 83%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:17%, no person score 83%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:17%, no person score 83%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:18%, no person score 82%
+No hay persona detectada
+Image Captured
+
+person score:17%, no person score 83%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:17%, no person score 83%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:18%, no person score 82%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:17%, no person score 83%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:18%, no person score 82%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:17%, no person score 83%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:20%, no person score 80%
+No hay persona detectada
+Image Captured
+
+person score:18%, no person score 82%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:20%, no person score 80%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:18%, no person score 82%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:17%, no person score 83%
+No hay persona detectada
+Image Captured
+
+person score:17%, no person score 83%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:17%, no person score 83%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:17%, no person score 83%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:17%, no person score 83%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:18%, no person score 82%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:12%, no person score 88%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:12%, no person score 88%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:17%, no person score 83%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:12%, no person score 88%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:40%, no person score 60%
+No hay persona detectada
+Image Captured
+
+person score:33%, no person score 67%
+No hay persona detectada
+Image Captured
+
+person score:61%, no person score 39%
+No hay persona detectada
+Image Captured
+
+person score:26%, no person score 74%
+Boton FalseNo hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+Boton trueNo hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:22%, no person score 78%
+No hay persona detectada
+Image Captured
+
+person score:35%, no person score 65%
+No hay persona detectada
+Image Captured
+
+person score:72%, no person score 28%
+Persona detectada...LED Prendida
+Image Captured
+
+person score:69%, no person score 31%
+No hay persona detectada
+Image Captured
+
+person score:58%, no person score 42%
+No hay persona detectada
+Image Captured
+
+person score:57%, no person score 43%
+No hay persona detectada
+Image Captured
+
+person score:77%, no person score 23%
+Persona detectada...LED Prendida
+Image Captured
+
+person score:77%, no person score 23%
+Persona detectada...LED Prendida
+Image Captured
+
+person score:69%, no person score 31%
+No hay persona detectada
+Image Captured
+
+person score:61%, no person score 39%
+Boton FalseNo hay persona detectada
+Image Captured
+
+person score:78%, no person score 22%
+Boton FalsePersona detectada...LED Prendida
+Image Captured
+
+person score:80%, no person score 20%
+Boton truePersona detectada...LED Prendida
+Image Captured
+
+person score:75%, no person score 25%
+Persona detectada...LED Prendida
+Image Captured
+
+person score:73%, no person score 27%
+Persona detectada...LED Prendida
+Image Captured
+
+person score:90%, no person score 10%
+Persona detectada...LED Prendida
+Image Captured
+
+person score:38%, no person score 62%
+No hay persona detectada
+Image Captured
+
+person score:23%, no person score 77%
+No hay persona detectada
+Image Captured
+
+person score:25%, no person score 75%
+No hay persona detectada
+Image Captured
+
+person score:20%, no person score 80%
+No hay persona detectada
+Image Captured
+
+person score:24%, no person score 76%
+No hay persona detectada
+Image Captured
+
+person score:38%, no person score 62%
+No hay persona detectada
+Image Captured
+
+person score:46%, no person score 54%
+No hay persona detectada
+Image Captured
+
+person score:37%, no person score 63%
+No hay persona detectada
+Image Captured
+
+person score:27%, no person score 73%
+Boton FalseNo hay persona detectada
+Image Captured
+
+person score:31%, no person score 69%
+Boton trueNo hay persona detectada
+Image Captured
+
+person score:43%, no person score 57%
+No hay persona detectada
+Image Captured
+
+person score:43%, no person score 57%
+No hay persona detectada
+Image Captured
+
+person score:33%, no person score 67%
+No hay persona detectada
+Image Captured
+
+person score:29%, no person score 71%
+No hay persona detectada
+Image Captured
+
+person score:21%, no person score 79%
+No hay persona detectada
+Image Captured
+
+person score:21%, no person score 79%
+No hay persona detectada
+Image Captured
+
+person score:22%, no person score 78%
+No hay persona detectada
+Image Captured
+
+person score:23%, no person score 77%
+No hay persona detectada
+Image Captured
+
+person score:22%, no person score 78%
+No hay persona detectada
+Image Captured
+
+person score:21%, no person score 79%
+No hay persona detectada
+Image Captured
+
+person score:11%, no person score 89%
+No hay persona detectada
+Image Captured
+
+person score:11%, no person score 89%
+No hay persona detectada
+Image Captured
+
+person score:21%, no person score 79%
+No hay persona detectada
+Image Captured
+
+person score:18%, no person score 82%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:17%, no person score 83%
+No hay persona detectada
+Image Captured
+
+person score:17%, no person score 83%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:18%, no person score 82%
+No hay persona detectada
+Image Captured
+
+person score:17%, no person score 83%
+No hay persona detectada
+Image Captured
+
+person score:18%, no person score 82%
+No hay persona detectada
+Image Captured
+
+person score:19%, no person score 81%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:12%, no person score 88%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:12%, no person score 88%
+No hay persona detectada
+Image Captured
+
+person score:12%, no person score 88%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:17%, no person score 83%
+No hay persona detectada
+Image Captured
+
+person score:20%, no person score 80%
+No hay persona detectada
+Image Captured
+
+person score:20%, no person score 80%
+No hay persona detectada
+Image Captured
+
+person score:18%, no person score 82%
+No hay persona detectada
+Image Captured
+
+person score:20%, no person score 80%
+No hay persona detectada
+Image Captured
+
+person score:19%, no person score 81%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:22%, no person score 78%
+No hay persona detectada
+Image Captured
+
+person score:18%, no person score 82%
+No hay persona detectada
+Image Captured
+
+person score:21%, no person score 79%
+No hay persona detectada
+Image Captured
+
+person score:18%, no person score 82%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:18%, no person score 82%
+No hay persona detectada
+Image Captured
+
+person score:20%, no person score 80%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:19%, no person score 81%
+No hay persona detectada
+Image Captured
+
+person score:18%, no person score 82%
+No hay persona detectada
+Image Captured
+
+person score:18%, no person score 82%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:17%, no person score 83%
+No hay persona detectada
+Image Captured
+
+person score:18%, no person score 82%
+No hay persona detectada
+Image Captured
+
+person score:18%, no person score 82%
+No hay persona detectada
+Image Captured
+
+person score:21%, no person score 79%
+No hay persona detectada
+Image Captured
+
+person score:17%, no person score 83%
+No hay persona detectada
+Image Captured
+
+person score:17%, no person score 83%
+No hay persona detectada
+Image Captured
+
+person score:18%, no person score 82%
+No hay persona detectada
+Image Captured
+
+person score:19%, no person score 81%
+No hay persona detectada
+Image Captured
+
+person score:20%, no person score 80%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:20%, no person score 80%
+No hay persona detectada
+Image Captured
+
+person score:20%, no person score 80%
+No hay persona detectada
+Image Captured
+
+person score:24%, no person score 76%
+No hay persona detectada
+Image Captured
+
+person score:21%, no person score 79%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:11%, no person score 89%
+No hay persona detectada
+Image Captured
+
+person score:11%, no person score 89%
+No hay persona detectada
+Image Captured
+
+person score:12%, no person score 88%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:18%, no person score 82%
+No hay persona detectada
+Image Captured
+
+person score:20%, no person score 80%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:17%, no person score 83%
+No hay persona detectada
+Image Captured
+
+person score:18%, no person score 82%
+No hay persona detectada
+Image Captured
+
+person score:18%, no person score 82%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:18%, no person score 82%
+No hay persona detectada
+Image Captured
+
+person score:20%, no person score 80%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:18%, no person score 82%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:17%, no person score 83%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:17%, no person score 83%
+No hay persona detectada
+Image Captured
+
+person score:20%, no person score 80%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:12%, no person score 88%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:18%, no person score 82%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:11%, no person score 89%
+No hay persona detectada
+Image Captured
+
+person score:12%, no person score 88%
+No hay persona detectada
+Image Captured
+
+person score:9%, no person score 91%
+No hay persona detectada
+Image Captured
+
+person score:10%, no person score 90%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:20%, no person score 80%
+No hay persona detectada
+Image Captured
+
+person score:20%, no person score 80%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:19%, no person score 81%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:19%, no person score 81%
+No hay persona detectada
+Image Captured
+
+person score:20%, no person score 80%
+No hay persona detectada
+Image Captured
+
+person score:20%, no person score 80%
+No hay persona detectada
+Image Captured
+
+person score:19%, no person score 81%
+No hay persona detectada
+Image Captured
+
+person score:20%, no person score 80%
+No hay persona detectada
+Image Captured
+
+person score:17%, no person score 83%
+No hay persona detectada
+Image Captured
+
+person score:19%, no person score 81%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:11%, no person score 89%
+No hay persona detectada
+Image Captured
+
+person score:21%, no person score 79%
+No hay persona detectada
+Image Captured
+
+person score:21%, no person score 79%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:26%, no person score 74%
+No hay persona detectada
+Image Captured
+
+person score:24%, no person score 76%
+No hay persona detectada
+Image Captured
+
+person score:25%, no person score 75%
+No hay persona detectada
+Image Captured
+
+person score:21%, no person score 79%
+No hay persona detectada
+Image Captured
+
+person score:18%, no person score 82%
+No hay persona detectada
+Image Captured
+
+person score:21%, no person score 79%
+No hay persona detectada
+Image Captured
+
+person score:18%, no person score 82%
+No hay persona detectada
+Image Captured
+
+person score:20%, no person score 80%
+No hay persona detectada
+Image Captured
+
+person score:18%, no person score 82%
+No hay persona detectada
+Image Captured
+
+person score:21%, no person score 79%
+No hay persona detectada
+Image Captured
+
+person score:17%, no person score 83%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:11%, no person score 89%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:12%, no person score 88%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:20%, no person score 80%
+No hay persona detectada
+Image Captured
+
+person score:17%, no person score 83%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:17%, no person score 83%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:18%, no person score 82%
+No hay persona detectada
+Image Captured
+
+person score:18%, no person score 82%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:18%, no person score 82%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:17%, no person score 83%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:20%, no person score 80%
+No hay persona detectada
+Image Captured
+
+person score:20%, no person score 80%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:18%, no person score 82%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:12%, no person score 88%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:11%, no person score 89%
+No hay persona detectada
+Image Captured
+
+person score:17%, no person score 83%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:17%, no person score 83%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:11%, no person score 89%
+No hay persona detectada
+Image Captured
+
+person score:9%, no person score 91%
+No hay persona detectada
+Image Captured
+
+person score:12%, no person score 88%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:11%, no person score 89%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:20%, no person score 80%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:18%, no person score 82%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:19%, no person score 81%
+No hay persona detectada
+Image Captured
+
+person score:17%, no person score 83%
+No hay persona detectada
+Image Captured
+
+person score:20%, no person score 80%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:12%, no person score 88%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:18%, no person score 82%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:11%, no person score 89%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:11%, no person score 89%
+No hay persona detectada
+Image Captured
+
+person score:10%, no person score 90%
+No hay persona detectada
+Image Captured
+
+person score:10%, no person score 90%
+No hay persona detectada
+Image Captured
+
+person score:11%, no person score 89%
+No hay persona detectada
+Image Captured
+
+person score:11%, no person score 89%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:18%, no person score 82%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:11%, no person score 89%
+No hay persona detectada
+Image Captured
+
+person score:12%, no person score 88%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:18%, no person score 82%
+No hay persona detectada
+Image Captured
+
+person score:12%, no person score 88%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:12%, no person score 88%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:11%, no person score 89%
+No hay persona detectada
+Image Captured
+
+person score:11%, no person score 89%
+No hay persona detectada
+Image Captured
+
+person score:11%, no person score 89%
+No hay persona detectada
+Image Captured
+
+person score:9%, no person score 91%
+No hay persona detectada
+Image Captured
+
+person score:23%, no person score 77%
+No hay persona detectada
+Image Captured
+
+person score:17%, no person score 83%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:12%, no person score 88%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:17%, no person score 83%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:11%, no person score 89%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:20%, no person score 80%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:18%, no person score 82%
+No hay persona detectada
+Image Captured
+
+person score:12%, no person score 88%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:12%, no person score 88%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:19%, no person score 81%
+No hay persona detectada
+Image Captured
+
+person score:17%, no person score 83%
+No hay persona detectada
+Image Captured
+
+person score:19%, no person score 81%
+No hay persona detectada
+Image Captured
+
+person score:21%, no person score 79%
+No hay persona detectada
+Image Captured
+
+person score:19%, no person score 81%
+No hay persona detectada
+Image Captured
+
+person score:18%, no person score 82%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:18%, no person score 82%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:18%, no person score 82%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:19%, no person score 81%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:17%, no person score 83%
+No hay persona detectada
+Image Captured
+
+person score:17%, no person score 83%
+No hay persona detectada
+Image Captured
+
+person score:17%, no person score 83%
+No hay persona detectada
+Image Captured
+
+person score:21%, no person score 79%
+No hay persona detectada
+Image Captured
+
+person score:20%, no person score 80%
+No hay persona detectada
+Image Captured
+
+person score:17%, no person score 83%
+No hay persona detectada
+Image Captured
+
+person score:17%, no person score 83%
+No hay persona detectada
+Image Captured
+
+person score:18%, no person score 82%
+No hay persona detectada
+Image Captured
+
+person score:20%, no person score 80%
+No hay persona detectada
+Image Captured
+
+person score:18%, no person score 82%
+No hay persona detectada
+Image Captured
+
+person score:20%, no person score 80%
+No hay persona detectada
+Image Captured
+
+person score:22%, no person score 78%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:19%, no person score 81%
+No hay persona detectada
+Image Captured
+
+person score:19%, no person score 81%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:20%, no person score 80%
+No hay persona detectada
+Image Captured
+
+person score:20%, no person score 80%
+No hay persona detectada
+Image Captured
+
+person score:20%, no person score 80%
+No hay persona detectada
+Image Captured
+
+person score:23%, no person score 77%
+No hay persona detectada
+Image Captured
+
+person score:18%, no person score 82%
+No hay persona detectada
+Image Captured
+
+person score:19%, no person score 81%
+No hay persona detectada
+Image Captured
+
+person score:20%, no person score 80%
+No hay persona detectada
+Image Captured
+
+person score:26%, no person score 74%
+No hay persona detectada
+Image Captured
+
+person score:21%, no person score 79%
+No hay persona detectada
+Image Captured
+
+person score:19%, no person score 81%
+No hay persona detectada
+Image Captured
+
+person score:21%, no person score 79%
+No hay persona detectada
+Image Captured
+
+person score:21%, no person score 79%
+No hay persona detectada
+Image Captured
+
+person score:24%, no person score 76%
+No hay persona detectada
+Image Captured
+
+person score:20%, no person score 80%
+No hay persona detectada
+Image Captured
+
+person score:21%, no person score 79%
+No hay persona detectada
+Image Captured
+
+person score:21%, no person score 79%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:19%, no person score 81%
+No hay persona detectada
+Image Captured
+
+person score:41%, no person score 59%
+No hay persona detectada
+Image Captured
+
+person score:40%, no person score 60%
+No hay persona detectada
+Image Captured
+
+person score:52%, no person score 48%
+No hay persona detectada
+Image Captured
+
+person score:38%, no person score 62%
+No hay persona detectada
+Image Captured
+
+person score:34%, no person score 66%
+No hay persona detectada
+Image Captured
+
+person score:41%, no person score 59%
+No hay persona detectada
+Image Captured
+
+person score:46%, no person score 54%
+No hay persona detectada
+Image Captured
+
+person score:54%, no person score 46%
+No hay persona detectada
+Image Captured
+
+person score:46%, no person score 54%
+No hay persona detectada
+Image Captured
+
+person score:51%, no person score 49%
+No hay persona detectada
+Image Captured
+
+person score:21%, no person score 79%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:17%, no person score 83%
+No hay persona detectada
+Image Captured
+
+person score:25%, no person score 75%
+No hay persona detectada
+Image Captured
+
+person score:23%, no person score 77%
+No hay persona detectada
+Image Captured
+
+person score:38%, no person score 62%
+No hay persona detectada
+Image Captured
+
+person score:54%, no person score 46%
+No hay persona detectada
+Image Captured
+
+person score:52%, no person score 48%
+No hay persona detectada
+Image Captured
+
+person score:34%, no person score 66%
+No hay persona detectada
+Image Captured
+
+person score:23%, no person score 77%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:14%, no person score 86%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:19%, no person score 81%
+No hay persona detectada
+Image Captured
+
+person score:18%, no person score 82%
+No hay persona detectada
+Image Captured
+
+person score:18%, no person score 82%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:18%, no person score 82%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:11%, no person score 89%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:18%, no person score 82%
+No hay persona detectada
+Image Captured
+
+person score:20%, no person score 80%
+No hay persona detectada
+Image Captured
+
+person score:23%, no person score 77%
+No hay persona detectada
+Image Captured
+
+person score:29%, no person score 71%
+No hay persona detectada
+Image Captured
+
+person score:35%, no person score 65%
+No hay persona detectada
+Image Captured
+
+person score:25%, no person score 75%
+No hay persona detectada
+Image Captured
+
+person score:33%, no person score 67%
+No hay persona detectada
+Image Captured
+
+person score:20%, no person score 80%
+No hay persona detectada
+Image Captured
+
+person score:25%, no person score 75%
+No hay persona detectada
+Image Captured
+
+person score:31%, no person score 69%
+No hay persona detectada
+Image Captured
+
+person score:26%, no person score 74%
+No hay persona detectada
+Image Captured
+
+person score:26%, no person score 74%
+No hay persona detectada
+Image Captured
+
+person score:26%, no person score 74%
+No hay persona detectada
+Image Captured
+
+person score:21%, no person score 79%
+No hay persona detectada
+Image Captured
+
+person score:23%, no person score 77%
+No hay persona detectada
+Image Captured
+
+person score:25%, no person score 75%
+No hay persona detectada
+Image Captured
+
+person score:25%, no person score 75%
+No hay persona detectada
+Image Captured
+
+person score:25%, no person score 75%
+No hay persona detectada
+Image Captured
+
+person score:26%, no person score 74%
+No hay persona detectada
+Image Captured
+
+person score:31%, no person score 69%
+No hay persona detectada
+Image Captured
+
+person score:28%, no person score 72%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:13%, no person score 87%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:20%, no person score 80%
+No hay persona detectada
+Image Captured
+
+person score:22%, no person score 78%
+No hay persona detectada
+Image Captured
+
+person score:29%, no person score 71%
+No hay persona detectada
+Image Captured
+
+person score:34%, no person score 66%
+No hay persona detectada
+Image Captured
+
+person score:28%, no person score 72%
+No hay persona detectada
+Image Captured
+
+person score:25%, no person score 75%
+No hay persona detectada
+Image Captured
+
+person score:17%, no person score 83%
+No hay persona detectada
+Image Captured
+
+person score:22%, no person score 78%
+No hay persona detectada
+Image Captured
+
+person score:30%, no person score 70%
+No hay persona detectada
+Image Captured
+
+person score:15%, no person score 85%
+No hay persona detectada
+Image Captured
+
+person score:54%, no person score 46%
+No hay persona detectada
+Image Captured
+
+person score:45%, no person score 55%
+No hay persona detectada
+Image Captured
+
+person score:28%, no person score 72%
+No hay persona detectada
+Image Captured
+
+person score:44%, no person score 56%
+No hay persona detectada
+Image Captured
+
+person score:30%, no person score 70%
+No hay persona detectada
+Image Captured
+
+person score:28%, no person score 72%
+No hay persona detectada
+Image Captured
+
+person score:33%, no person score 67%
+No hay persona detectada
+Image Captured
+
+person score:23%, no person score 77%
+No hay persona detectada
+Image Captured
+
+person score:35%, no person score 65%
+No hay persona detectada
+Image Captured
+
+person score:35%, no person score 65%
+No hay persona detectada
+Image Captured
+
+person score:32%, no person score 68%
+No hay persona detectada
+Image Captured
+
+person score:43%, no person score 57%
+No hay persona detectada
+Image Captured
+
+person score:30%, no person score 70%
+No hay persona detectada
+Image Captured
+
+person score:28%, no person score 72%
+No hay persona detectada
+Image Captured
+
+person score:28%, no person score 72%
+No hay persona detectada
+Image Captured
+
+person score:30%, no person score 70%
+No hay persona detectada
+Image Captured
+
+person score:66%, no person score 34%
+No hay persona detectada
+Image Captured
+
+person score:18%, no person score 82%
+No hay persona detectada
+Image Captured
+
+person score:16%, no person score 84%
+No hay persona detectada
+Image Captured
+
+person score:20%, no person score 80%
+No hay persona detectada
+Image Captured
+
+person score:20%, no person score 80%
+No hay persona detectada
+Image Captured
+
+person score:19%, no person score 81%
+No hay persona detectada
+Image Captured
+
+person score:20%, no person score 80%
+No hay persona detectada
+Image Captured
+
+person score:23%, no person score 77%
+No hay persona detectada
+Image Captured
+
+person score:17%, no person score 83%
+No hay persona detectada
+Image Captured
+

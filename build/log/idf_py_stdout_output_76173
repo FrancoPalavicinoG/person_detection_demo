@@ -1,0 +1,88 @@
+ets���� 20L���22:MSH�HH���0x1 (�]I=N_RŪ�b����0x13�SP�eMQ}FLA��%==�)
+��K���ip:�, S�]A�0xee�,k�E����0,�E���0x00��E��i0x0�i��_drv:��0,�}���:0x0�wp_���0�0
+[���DIO, ,덭�div�LC!�+��0Mfff�30����7524!녑�0x4����,leK�����
+�+���00�400����4
+l�X����008�04,��鴦�j�Y��0x4�806M�H�[0;32mI (28) boot: ESP-IDF v5.3-dev-2747-g4f3cd0deb9 2nd stage bootloader[0m
+[0;32mI (28) boot: compile time Jun 18 2024 17:51:41[0m
+[0;32mI (30) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v1.0[0m
+[0;32mI (38) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (43) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (48) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (52) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (57) boot: Enabling RNG early entropy source...[0m
+[0;32mI (62) boot: Partition Table:[0m
+[0;32mI (66) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (73) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (81) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (88) boot:  2 factory          factory app      00 00 00010000 00180000[0m
+[0;32mI (96) boot: End of partition table[0m
+[0;32mI (100) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=5e70ch (386828) map[0m
+[0;32mI (208) esp_image: segment 1: paddr=0006e734 vaddr=3ffb0000 size=018e4h (  6372) load[0m
+[0;32mI (210) esp_image: segment 2: paddr=00070020 vaddr=400d0020 size=30f20h (200480) map[0m
+[0;32mI (265) esp_image: segment 3: paddr=000a0f48 vaddr=3ffb18e4 size=01a88h (  6792) load[0m
+[0;32mI (267) esp_image: segment 4: paddr=000a29d8 vaddr=40080000 size=10cd0h ( 68816) load[0m
+[0;32mI (300) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (300) boot: Disabling RNG early entropy source...[0m
+[0;32mI (312) cpu_start: Multicore app[0m
+[0;32mI (312) quad_psram: This chip is ESP32-D0WD[0m
+[0;32mI (312) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (314) esp_psram: Speed: 80MHz[0m
+[0;32mI (318) esp_psram: PSRAM initialized, cache is in low/high (2-core) mode.[0m
+[0;33mW (325) esp_psram: Virtual address not enough for PSRAM, map as much as we can. 4MB is mapped[0m
+[0;32mI (798) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (806) cpu_start: Pro cpu start user code[0m
+[0;32mI (806) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (806) app_init: Application information:[0m
+[0;32mI (809) app_init: Project name:     person_detection[0m
+[0;32mI (814) app_init: App version:      1[0m
+[0;32mI (819) app_init: Compile time:     Jun 18 2024 17:51:35[0m
+[0;32mI (825) app_init: ELF file SHA256:  2c51fed35...[0m
+[0;32mI (830) app_init: ESP-IDF:          v5.3-dev-2747-g4f3cd0deb9[0m
+[0;32mI (836) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (841) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (846) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (851) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (858) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (864) heap_init: At 3FFB40E8 len 0002BF18 (175 KiB): DRAM[0m
+[0;32mI (871) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (877) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (883) heap_init: At 40090CD0 len 0000F330 (60 KiB): IRAM[0m
+[0;32mI (890) esp_psram: Adding pool of 4096K of PSRAM memory to heap allocator[0m
+[0;32mI (898) spi_flash: detected chip: generic[0m
+[0;32mI (902) spi_flash: flash io: qio[0m
+[0;33mW (906) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (917) main_task: Started on CPU0[0m
+[0;32mI (927) main_task: Calling app_main()[0m
+[0;32mI (947) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (947) cam_hal: cam init ok[0m
+[0;32mI (947) sccb: pin_sda 26 pin_scl 27[0m
+[0;32mI (947) sccb: sccb_i2c_port=1[0m
+[0;32mI (957) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (987) camera: Detected camera at address=0x30[0m
+[0;32mI (987) camera: Detected OV2640 camera[0m
+[0;32mI (987) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (1057) esp32 ll_cam: node_size: 3072, nodes_per_line: 1, lines_per_node: 4, dma_half_buffer_min:  3072, dma_half_buffer: 12288,lines_per_half_buffer: 16, dma_buffer_size: 24576, image_size: 18432[0m
+[0;32mI (1067) cam_hal: buffer_size: 24576, half_buffer_size: 12288, node_buffer_size: 3072, node_cnt: 8, total_cnt: 1[0m
+[0;32mI (1077) cam_hal: Allocating 9216 Byte frame buffer in PSRAM[0m
+[0;32mI (1087) cam_hal: Allocating 9216 Byte frame buffer in PSRAM[0m
+[0;32mI (1087) cam_hal: cam config ok[0m
+[0;32mI (1097) ov2640: Set PLL: clk_2x: 0, clk_div: 3, pclk_auto: 1, pclk_div: 8[0m
+Camera Initialized
+
+Image Captured
+
+person score:22%, no person score 78%
+[0;32mI (1807) gpio: GPIO[12]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1817) gpio: GPIO[13]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1827) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+
+person score:32%, no person score 68%
+[0;32mI (2307) gpio: GPIO[12]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (2317) gpio: GPIO[13]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (2327) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+No hay persona detectada
+Image Captured
+

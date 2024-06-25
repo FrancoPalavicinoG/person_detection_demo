@@ -24,7 +24,8 @@ limitations under the License.
 #include "esp_log.h"
 #include "driver/gpio.h"
 
-#define LED_GPIO static_cast<gpio_num_t>(4)
+#define FLASH_GPIO static_cast<gpio_num_t>(4)
+extern bool alarm_active;
 
 #include "esp_main.h"
 #if DISPLAY_SUPPORT
@@ -85,14 +86,12 @@ void RespondToDetection(float person_score, float no_person_score) {
   MicroPrintf("person score:%d%%, no person score %d%%",
               person_score_int, 100 - person_score_int);
 
-  gpio_reset_pin(LED_GPIO);
-  gpio_set_direction(LED_GPIO, GPIO_MODE_OUTPUT);
-  if (person_score_int >= 70) {
-    printf("Persona detectada...LED Prendida\n");
-    gpio_set_level(LED_GPIO, 1);
+  if (alarm_active && person_score_int >= 70){
+    printf("Persona detectada...Alarma Encendida\n");
+    gpio_set_level(FLASH_GPIO, 1);
   }
   else {
-    printf("No hay persona detectada\n");
-    gpio_set_level(LED_GPIO, 0);
+    printf("No hay persona detectada o Alarma\n");
+    gpio_set_level(FLASH_GPIO, 0);
   }
 }
