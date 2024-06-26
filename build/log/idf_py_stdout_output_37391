@@ -1,0 +1,2395 @@
+ets ������� 00:2&��SH�HH�t:0x1 	�]I=9}IESET),���0x1&�SPI_FP*�e1M!}BOOT)���˥�ͥ�� 0, SPR���5
+clk_dr����0,�E���0x�bd_drv���0,cs�E���0x�bhd_drv'��0,wpE���0x0j
+mode:T�	���� div:1C!�+��0�fff003�����752SH�����0x400780�blen:16MM�Hloa��x40080�,len:SH�녑�0Q008040����43LSH������0x40080S�5
+[0;32mI (28) boot: ESP-IDF v5.3-dev-2747-g4f3cd0deb9 2nd stage bootloader[0m
+[0;32mI (28) boot: compile time Jun 25 2024 12:26:26[0m
+[0;32mI (30) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v1.0[0m
+[0;32mI (38) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (43) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (48) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (52) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (57) boot: Enabling RNG early entropy source...[0m
+[0;32mI (62) boot: Partition Table:[0m
+[0;32mI (66) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (73) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (81) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (88) boot:  2 factory          factory app      00 00 00010000 00180000[0m
+[0;32mI (96) boot: End of partition table[0m
+[0;32mI (100) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=5398ch (342412) map[0m
+[0;32mI (196) esp_image: segment 1: paddr=000639b4 vaddr=3ffb0000 size=0336ch ( 13164) load[0m
+[0;32mI (200) esp_image: segment 2: paddr=00066d28 vaddr=40080000 size=092f0h ( 37616) load[0m
+[0;32mI (214) esp_image: segment 3: paddr=00070020 vaddr=400d0020 size=343f0h (214000) map[0m
+[0;32mI (269) esp_image: segment 4: paddr=000a4418 vaddr=400892f0 size=079e0h ( 31200) load[0m
+[0;32mI (287) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (287) boot: Disabling RNG early entropy source...[0m
+[0;32mI (299) cpu_start: Multicore app[0m
+[0;32mI (299) quad_psram: This chip is ESP32-D0WD[0m
+[0;32mI (299) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (301) esp_psram: Speed: 80MHz[0m
+[0;32mI (305) esp_psram: PSRAM initialized, cache is in low/high (2-core) mode.[0m
+[0;33mW (312) esp_psram: Virtual address not enough for PSRAM, map as much as we can. 4MB is mapped[0m
+[0;32mI (785) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (793) cpu_start: Pro cpu start user code[0m
+[0;32mI (793) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (793) app_init: Application information:[0m
+[0;32mI (796) app_init: Project name:     person_detection[0m
+[0;32mI (801) app_init: App version:      3b6d3d3-dirty[0m
+[0;32mI (807) app_init: Compile time:     Jun 25 2024 12:26:20[0m
+[0;32mI (813) app_init: ELF file SHA256:  d00c055e8...[0m
+[0;32mI (818) app_init: ESP-IDF:          v5.3-dev-2747-g4f3cd0deb9[0m
+[0;32mI (824) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (829) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (834) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (839) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (846) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (852) heap_init: At 3FFB41A8 len 0002BE58 (175 KiB): DRAM[0m
+[0;32mI (858) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (865) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (871) heap_init: At 40090CD0 len 0000F330 (60 KiB): IRAM[0m
+[0;32mI (878) esp_psram: Adding pool of 4096K of PSRAM memory to heap allocator[0m
+[0;32mI (885) spi_flash: detected chip: generic[0m
+[0;32mI (890) spi_flash: flash io: qio[0m
+[0;33mW (894) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (905) main_task: Started on CPU0[0m
+[0;32mI (915) main_task: Calling app_main()[0m
+[0;32mI (915) gpio: GPIO[13]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (915) gpio: GPIO[12]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (925) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (935) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (945) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (955) cam_hal: cam init ok[0m
+[0;32mI (955) sccb: pin_sda 26 pin_scl 27[0m
+[0;32mI (965) sccb: sccb_i2c_port=1[0m
+[0;32mI (965) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1005) camera: Detected camera at address=0x30[0m
+[0;32mI (1005) camera: Detected OV2640 camera[0m
+[0;32mI (1005) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (1075) esp32 ll_cam: node_size: 3072, nodes_per_line: 1, lines_per_node: 4, dma_half_buffer_min:  3072, dma_half_buffer: 12288,lines_per_half_buffer: 16, dma_buffer_size: 24576, image_size: 18432[0m
+[0;32mI (1085) cam_hal: buffer_size: 24576, half_buffer_size: 12288, node_buffer_size: 3072, node_cnt: 8, total_cnt: 1[0m
+[0;32mI (1095) cam_hal: Allocating 9216 Byte frame buffer in PSRAM[0m
+[0;32mI (1105) cam_hal: Allocating 9216 Byte frame buffer in PSRAM[0m
+[0;32mI (1105) cam_hal: cam config ok[0m
+[0;32mI (1115) ov2640: Set PLL: clk_2x: 0, clk_div: 3, pclk_auto: 1, pclk_div: 8[0m
+Camera Initialized
+
+Boton No presionado
+Image Captured
+
+person score:3%, no person score 57%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:4%, no person score 56%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-4%, no person score 65%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-5%, no person score 66%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-1%, no person score 62%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:3%, no person score 57%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:12%, no person score 48%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:12%, no person score 48%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 49%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:16%, no person score 44%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:18%, no person score 43%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:18%, no person score 43%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:17%, no person score 43%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:16%, no person score 44%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:15%, no person score 45%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:14%, no person score 46%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:14%, no person score 46%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:14%, no person score 46%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:14%, no person score 46%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:15%, no person score 45%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:15%, no person score 45%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:17%, no person score 43%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:18%, no person score 43%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:18%, no person score 43%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:18%, no person score 43%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:18%, no person score 42%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:18%, no person score 43%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:16%, no person score 44%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:15%, no person score 45%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 49%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:9%, no person score 51%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:13%, no person score 47%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:14%, no person score 46%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-1%, no person score 62%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:0%, no person score 60%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-10%, no person score 71%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-5%, no person score 66%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-4%, no person score 65%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:5%, no person score 55%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:3%, no person score 57%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:0%, no person score 61%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:2%, no person score 58%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:0%, no person score 60%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:0%, no person score 61%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:0%, no person score 60%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:1%, no person score 59%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-1%, no person score 62%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-1%, no person score 62%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:0%, no person score 60%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-3%, no person score 64%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-5%, no person score 66%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-1%, no person score 62%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-1%, no person score 62%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:0%, no person score 60%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:3%, no person score 57%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:4%, no person score 56%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:2%, no person score 58%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:3%, no person score 57%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:0%, no person score 60%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-3%, no person score 64%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-1%, no person score 62%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-1%, no person score 62%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-1%, no person score 62%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:0%, no person score 60%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-1%, no person score 62%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:1%, no person score 59%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:0%, no person score 60%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:0%, no person score 60%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:1%, no person score 59%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:0%, no person score 60%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:0%, no person score 60%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-1%, no person score 62%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:0%, no person score 60%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:5%, no person score 55%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:17%, no person score 43%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:4%, no person score 56%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-5%, no person score 66%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-11%, no person score 72%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-6%, no person score 67%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:76%, no person score -15%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:14%, no person score 46%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:1%, no person score 59%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:55%, no person score 5%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:72%, no person score -11%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:68%, no person score -7%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:53%, no person score 7%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:55%, no person score 5%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:59%, no person score 1%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:56%, no person score 4%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:53%, no person score 7%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:54%, no person score 6%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:58%, no person score 2%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:63%, no person score -2%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:67%, no person score -6%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:66%, no person score -5%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:71%, no person score -10%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:74%, no person score -13%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:76%, no person score -15%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:78%, no person score -17%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:78%, no person score -17%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:78%, no person score -17%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-17%, no person score 78%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-18%, no person score 79%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-17%, no person score 78%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-18%, no person score 79%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-17%, no person score 78%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-16%, no person score 77%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:80%, no person score -19%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-15%, no person score 76%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-16%, no person score 77%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-17%, no person score 78%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-19%, no person score 80%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-17%, no person score 78%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-16%, no person score 77%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-19%, no person score -19%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-18%, no person score 79%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:80%, no person score -19%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-17%, no person score 78%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:75%, no person score -14%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:68%, no person score -7%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-1%, no person score 62%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-9%, no person score 70%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:0%, no person score 60%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-5%, no person score 66%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:7%, no person score 53%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:8%, no person score 52%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:9%, no person score 51%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 49%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:12%, no person score 48%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:10%, no person score 50%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:12%, no person score 48%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:10%, no person score 50%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:10%, no person score 50%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:10%, no person score 50%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:5%, no person score 55%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:7%, no person score 53%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:7%, no person score 53%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:9%, no person score 51%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:9%, no person score 51%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:2%, no person score 58%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:0%, no person score 61%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:2%, no person score 58%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-1%, no person score 62%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-5%, no person score 66%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-2%, no person score 63%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-3%, no person score 64%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:5%, no person score 55%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:2%, no person score 58%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-6%, no person score 67%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-12%, no person score 73%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:65%, no person score -4%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-19%, no person score 80%
+No hay persona detectada o Alarma Off
+Boton presionado
+Image Captured
+
+person score:52%, no person score 8%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:62%, no person score -1%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:55%, no person score 5%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:57%, no person score 3%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:63%, no person score -2%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:75%, no person score -14%
+----Persona Detecteda----
+Boton No presionado
+Image Captured
+
+person score:61%, no person score 0%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:51%, no person score 9%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:75%, no person score -14%
+----Persona Detecteda----
+Boton No presionado
+Image Captured
+
+person score:-17%, no person score 78%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-19%, no person score 80%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-8%, no person score 69%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-11%, no person score 72%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-12%, no person score 73%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-10%, no person score 71%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-11%, no person score 72%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-12%, no person score 73%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-12%, no person score 73%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-14%, no person score 75%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-14%, no person score 75%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:65%, no person score -4%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:52%, no person score 8%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:54%, no person score 6%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:54%, no person score 6%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-17%, no person score 78%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-10%, no person score 71%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-16%, no person score 77%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:78%, no person score -17%
+----Persona Detecteda----
+Boton No presionado
+Image Captured
+
+person score:74%, no person score -13%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:73%, no person score -12%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:69%, no person score -8%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:73%, no person score -12%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:73%, no person score -12%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:73%, no person score -12%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:78%, no person score -17%
+----Persona Detecteda----
+Boton No presionado
+Image Captured
+
+person score:58%, no person score 2%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:49%, no person score 11%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-7%, no person score 68%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:2%, no person score 58%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:0%, no person score 61%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:3%, no person score 57%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-1%, no person score 62%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:5%, no person score 55%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:5%, no person score 55%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:2%, no person score 58%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-3%, no person score 64%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-3%, no person score 64%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-6%, no person score 67%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-5%, no person score 66%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-6%, no person score 67%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-7%, no person score 68%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-3%, no person score 64%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-5%, no person score 66%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-3%, no person score 64%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:6%, no person score 54%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-1%, no person score 62%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:80%, no person score -19%
+----Persona Detecteda----
+Boton No presionado
+Image Captured
+
+person score:54%, no person score 6%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:54%, no person score 6%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:58%, no person score 2%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:59%, no person score 1%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:58%, no person score 2%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:59%, no person score 1%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:58%, no person score 2%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:53%, no person score 7%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:75%, no person score -14%
+----Persona Detecteda----
+Boton No presionado
+Image Captured
+
+person score:64%, no person score -3%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:75%, no person score -14%
+----Persona Detecteda----
+Boton No presionado
+Image Captured
+
+person score:73%, no person score -12%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:76%, no person score -15%
+----Persona Detecteda----
+Boton No presionado
+Image Captured
+
+person score:71%, no person score -10%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:74%, no person score -13%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:74%, no person score -13%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:74%, no person score -13%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:75%, no person score -14%
+----Persona Detecteda----
+Boton No presionado
+Image Captured
+
+person score:72%, no person score -11%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:68%, no person score -7%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:2%, no person score 58%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:6%, no person score 54%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-12%, no person score 73%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-14%, no person score 75%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-12%, no person score 73%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-11%, no person score 72%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-12%, no person score 73%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-12%, no person score 73%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-12%, no person score 73%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-14%, no person score 75%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-10%, no person score 71%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-10%, no person score 71%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-12%, no person score 73%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-12%, no person score 73%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-12%, no person score 73%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-13%, no person score 74%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-12%, no person score 73%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-12%, no person score 73%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-14%, no person score 75%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-14%, no person score 75%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-14%, no person score 75%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-11%, no person score 72%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-12%, no person score 73%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-13%, no person score 74%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-15%, no person score 76%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-15%, no person score 76%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-12%, no person score 73%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-12%, no person score 73%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-14%, no person score 75%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-13%, no person score 74%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-12%, no person score 73%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-15%, no person score 76%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-10%, no person score 71%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-9%, no person score 70%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-12%, no person score 73%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-14%, no person score 75%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-10%, no person score 71%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-12%, no person score 73%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-11%, no person score 72%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-10%, no person score 71%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-11%, no person score 72%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-16%, no person score 77%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-12%, no person score 73%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-14%, no person score 75%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:6%, no person score 54%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:0%, no person score 60%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-7%, no person score 68%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:0%, no person score 61%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-10%, no person score 71%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-16%, no person score 77%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-12%, no person score 73%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-12%, no person score 73%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-15%, no person score 76%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-18%, no person score 79%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-18%, no person score 79%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-15%, no person score 76%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:69%, no person score -8%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:65%, no person score -4%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:66%, no person score -5%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:57%, no person score 3%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:63%, no person score -2%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:62%, no person score -1%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:60%, no person score 0%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:57%, no person score 3%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:62%, no person score -1%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:71%, no person score -10%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-6%, no person score 67%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-7%, no person score 68%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-10%, no person score 71%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:71%, no person score -10%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:68%, no person score -7%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:73%, no person score -12%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:72%, no person score -11%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:67%, no person score -6%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:64%, no person score -3%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:63%, no person score -2%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:64%, no person score -3%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:69%, no person score -8%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:64%, no person score -3%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:68%, no person score -7%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:62%, no person score -1%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:63%, no person score -2%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:70%, no person score -9%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:69%, no person score -8%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:68%, no person score -7%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:69%, no person score -8%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:71%, no person score -10%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:68%, no person score -7%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:75%, no person score -14%
+----Persona Detecteda----
+Boton No presionado
+Image Captured
+
+person score:-14%, no person score 75%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-12%, no person score 73%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-3%, no person score 64%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-5%, no person score 66%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-7%, no person score 68%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-5%, no person score 66%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-5%, no person score 66%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-5%, no person score 66%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-13%, no person score 74%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-13%, no person score 74%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-7%, no person score 68%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-11%, no person score 72%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-10%, no person score 71%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-13%, no person score 74%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-15%, no person score 76%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:76%, no person score -15%
+----Persona Detecteda----
+Boton No presionado
+Image Captured
+
+person score:67%, no person score -6%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:77%, no person score -16%
+----Persona Detecteda----
+Boton No presionado
+Image Captured
+
+person score:-16%, no person score 77%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:10%, no person score 50%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-19%, no person score -19%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-14%, no person score 75%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-14%, no person score 75%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-17%, no person score 78%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-15%, no person score 76%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-14%, no person score 75%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-15%, no person score 76%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-14%, no person score 75%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-12%, no person score 73%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:5%, no person score 55%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:5%, no person score 55%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-12%, no person score 73%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-7%, no person score 68%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-12%, no person score 73%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-13%, no person score 74%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-18%, no person score 79%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:79%, no person score -18%
+----Persona Detecteda----
+Boton No presionado
+Image Captured
+
+person score:78%, no person score -17%
+----Persona Detecteda----
+Boton No presionado
+Image Captured
+
+person score:76%, no person score -15%
+----Persona Detecteda----
+Boton No presionado
+Image Captured
+
+person score:68%, no person score -7%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:65%, no person score -4%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:7%, no person score 53%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-15%, no person score 76%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-10%, no person score 71%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-17%, no person score 78%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-14%, no person score 75%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-11%, no person score 72%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-10%, no person score 71%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-12%, no person score 73%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-11%, no person score 72%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-14%, no person score 75%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-14%, no person score 75%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:5%, no person score 55%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:0%, no person score 60%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:3%, no person score 57%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-6%, no person score 67%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-10%, no person score 71%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-15%, no person score 76%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-15%, no person score 76%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-12%, no person score 73%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-13%, no person score 74%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-15%, no person score 76%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-15%, no person score 76%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-16%, no person score 77%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-19%, no person score 80%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-18%, no person score 79%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:71%, no person score -10%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:70%, no person score -9%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:71%, no person score -10%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:65%, no person score -4%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:57%, no person score 3%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:62%, no person score -1%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:57%, no person score 3%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:54%, no person score 6%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:56%, no person score 4%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:56%, no person score 4%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:56%, no person score 4%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:73%, no person score -12%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:76%, no person score -15%
+----Persona Detecteda----
+Boton No presionado
+Image Captured
+
+person score:-8%, no person score 69%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-10%, no person score 71%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-7%, no person score 68%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-10%, no person score 71%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-11%, no person score 72%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-9%, no person score 70%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-8%, no person score 69%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-4%, no person score 65%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-7%, no person score 68%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-7%, no person score 68%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-10%, no person score 71%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-6%, no person score 67%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-8%, no person score 69%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-7%, no person score 68%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-6%, no person score 67%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-5%, no person score 66%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-6%, no person score 67%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-8%, no person score 69%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:68%, no person score -7%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:60%, no person score 0%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:70%, no person score -9%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:53%, no person score 7%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:71%, no person score -10%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:68%, no person score -7%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:69%, no person score -8%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:62%, no person score -1%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:67%, no person score -6%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:63%, no person score -2%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:62%, no person score -1%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:60%, no person score 0%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:64%, no person score -3%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:60%, no person score 0%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:66%, no person score -5%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:68%, no person score -7%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:72%, no person score -11%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:74%, no person score -13%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:78%, no person score -17%
+----Persona Detecteda----
+Boton No presionado
+Image Captured
+
+person score:78%, no person score -17%
+----Persona Detecteda----
+Boton No presionado
+Image Captured
+
+person score:78%, no person score -17%
+----Persona Detecteda----
+Boton No presionado
+Image Captured
+
+person score:-14%, no person score 75%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-6%, no person score 67%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-11%, no person score 72%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-8%, no person score 69%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-8%, no person score 69%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-4%, no person score 65%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:3%, no person score 57%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:0%, no person score 61%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:0%, no person score 60%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-1%, no person score 62%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:0%, no person score 60%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:1%, no person score 59%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:0%, no person score 60%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-3%, no person score 64%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-7%, no person score 68%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-6%, no person score 67%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-6%, no person score 67%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-7%, no person score 68%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-8%, no person score 69%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-3%, no person score 64%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-16%, no person score 77%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-14%, no person score 75%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-6%, no person score 67%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-14%, no person score 75%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-15%, no person score 76%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:-16%, no person score 77%
+No hay persona detectada o Alarma Off
+Boton No presionado
+Image Captured
+
+person score:78%, no person score -17%
+----Persona Detecteda----
+Boton No presionado
+Image Captured
+
+person score:80%, no person score -19%
+----Persona Detecteda----

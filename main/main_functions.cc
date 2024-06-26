@@ -36,7 +36,7 @@ constexpr int scratchBufSize = 40 * 1024;
 #else
 constexpr int scratchBufSize = 0;
 #endif
-constexpr int kTensorArenaSize = 81 * 1024 + scratchBufSize;
+constexpr int kTensorArenaSize = 81 * 1024 + 9000;
 static uint8_t *tensor_arena;
 }  // namespace
 
@@ -73,12 +73,17 @@ void setup() {
     return;
   }
 
-  static tflite::MicroMutableOpResolver<5> micro_op_resolver;
-  micro_op_resolver.AddAveragePool2D();
-  micro_op_resolver.AddConv2D();
-  micro_op_resolver.AddDepthwiseConv2D();
-  micro_op_resolver.AddReshape();
-  micro_op_resolver.AddSoftmax();
+  static tflite::MicroMutableOpResolver<10> micro_op_resolver;
+   micro_op_resolver.AddAveragePool2D();
+   micro_op_resolver.AddConv2D();
+   micro_op_resolver.AddDepthwiseConv2D();
+   micro_op_resolver.AddReshape();
+   micro_op_resolver.AddSoftmax();
+   micro_op_resolver.AddMaxPool2D(); 
+   micro_op_resolver.AddFullyConnected(); 
+   micro_op_resolver.AddLogistic(); 
+   micro_op_resolver.AddQuantize();
+   micro_op_resolver.AddDequantize();
 
   static tflite::MicroInterpreter static_interpreter(
       model, micro_op_resolver, tensor_arena, kTensorArenaSize);

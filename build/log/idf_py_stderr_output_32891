@@ -1,0 +1,78 @@
+[0;33m--- WARNING: Serial ports accessed as /dev/tty.* will hang gdb if launched.[0m
+[0;33m--- Using /dev/cu.usbserial-110 instead...[0m
+[0;33m--- esp-idf-monitor 1.4.0 on /dev/cu.usbserial-110 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33mMultiple decode errors occured: Try checking the baud rate and XTAL frequency setting in menuconfig[0m
+[0;33mMultiple decode errors occured: Try checking the baud rate and XTAL frequency setting in menuconfig[0m
+[0;33mMultiple decode errors occured: Try checking the baud rate and XTAL frequency setting in menuconfig[0m
+[0;33mMultiple decode errors occured: Try checking the baud rate and XTAL frequency setting in menuconfig[0m
+[0;33mMultiple decode errors occured: Try checking the baud rate and XTAL frequency setting in menuconfig[0m
+[1;31mNone[0m
+[0;33mWaiting for the device to reconnect[0m[0;33m[0m
+[1;31mNone[0m
+[0;33mWaiting for the device to reconnect[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m[0m
+[1;31mNone[0m
+[0;33mWaiting for the device to reconnect[0m[0;33m[0m
+[1;31mNone[0m
+[0;33mWaiting for the device to reconnect[0m[0;33m[0m
+[1;31mNone[0m
+[0;33mWaiting for the device to reconnect[0m[0;33m[0m
+[1;31mNone[0m
+[0;33mWaiting for the device to reconnect[0m[0;33m[0m
+[1;31mNone[0m
+[0;33mWaiting for the device to reconnect[0m[0;33m[0m
+[1;31mNone[0m
+[0;33mWaiting for the device to reconnect[0m[0;33m[0m
+[1;31mNone[0m
+[0;33mWaiting for the device to reconnect[0m[0;33m[0m
+[1;31mNone[0m
+[0;33mWaiting for the device to reconnect[0m[0;33m[0m
+[1;31mNone[0m
+[0;33mWaiting for the device to reconnect[0m[0;33m[0m
+[1;31mNone[0m
+[0;33mWaiting for the device to reconnect[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m[0m
+[1;31mNone[0m
+[0;33mWaiting for the device to reconnect[0m[0;33m[0m
+[1;31mNone[0m
+[0;33mWaiting for the device to reconnect[0m[0;33m[0m
+[1;31mNone[0m
+[0;33mWaiting for the device to reconnect[0m[0;33m[0m
+[1;31mNone[0m
+[0;33mWaiting for the device to reconnect[0m[0;33m[0m
+[1;31mNone[0m
+[0;33mWaiting for the device to reconnect[0mException in thread Thread-2 (_run_outer):
+Traceback (most recent call last):
+  File "/Users/franco_palavicino/esp/idf-tools/python_env/idf5.3_py3.12_env/lib/python3.12/site-packages/serial/serialposix.py", line 575, in read
+    buf = os.read(self.fd, size - len(read))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 6] Device not configured
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/franco_palavicino/esp/idf-tools/python_env/idf5.3_py3.12_env/lib/python3.12/site-packages/esp_idf_monitor/base/serial_reader.py", line 60, in run
+    data = self.serial.read(self.serial.in_waiting or 1)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/franco_palavicino/esp/idf-tools/python_env/idf5.3_py3.12_env/lib/python3.12/site-packages/serial/serialposix.py", line 581, in read
+    raise SerialException('read failed: {}'.format(e))
+serial.serialutil.SerialException: read failed: [Errno 6] Device not configured
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.12/3.12.2_1/Frameworks/Python.framework/Versions/3.12/lib/python3.12/threading.py", line 1073, in _bootstrap_inner
+    self.run()
+  File "/opt/homebrew/Cellar/python@3.12/3.12.2_1/Frameworks/Python.framework/Versions/3.12/lib/python3.12/threading.py", line 1010, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/franco_palavicino/esp/idf-tools/python_env/idf5.3_py3.12_env/lib/python3.12/site-packages/esp_idf_monitor/base/stoppable_thread.py", line 47, in _run_outer
+    self.run()
+  File "/Users/franco_palavicino/esp/idf-tools/python_env/idf5.3_py3.12_env/lib/python3.12/site-packages/esp_idf_monitor/base/serial_reader.py", line 72, in run
+    self.open_serial(reset=False)
+  File "/Users/franco_palavicino/esp/idf-tools/python_env/idf5.3_py3.12_env/lib/python3.12/site-packages/esp_idf_monitor/base/serial_reader.py", line 88, in open_serial
+    self.serial.open()
+  File "/Users/franco_palavicino/esp/idf-tools/python_env/idf5.3_py3.12_env/lib/python3.12/site-packages/serial/serialposix.py", line 332, in open
+    self._reconfigure_port(force_update=True)
+  File "/Users/franco_palavicino/esp/idf-tools/python_env/idf5.3_py3.12_env/lib/python3.12/site-packages/serial/serialposix.py", line 517, in _reconfigure_port
+    termios.tcsetattr(
+termios.error: (22, 'Invalid argument')
+[0m

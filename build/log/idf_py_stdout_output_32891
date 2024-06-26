@@ -1,0 +1,6451 @@
+e�.R�n ���16�0�&��7�HH�t��� (P�UI�N_�TUQ�����0�2�S�Re�STe1SHߨ�j
+co˥��i�'�b�S�R��e�,k���:0�0�\E�v���0,dE��i0��b��_dr�'�A0,�}��v���0,w�E��:0�0C�����DIO	�oc�"��:1�!�+��0x3���030���:7�&SH���d:�Ѱ�00�k�i1�MM�Hl�X��x4�8��bleK�j
+l�X��Ѱ���04���:4�LSH���ry���008�5�C�[0;32mI (28) boot: ESP-IDF v5.3-dev-2747-g4f3cd0deb9 2nd stage bootloader[0m
+[0;32mI (28) boot: compile time Jun 25 2024 12:26:26[0m
+[0;32mI (30) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v1.0[0m
+[0;32mI (38) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (43) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (48) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (52) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (57) boot: Enabling RNG early entropy source...[0m
+[0;32mI (62) boot: Partition Table:[0m
+[0;32mI (66) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (73) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (81) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (88) boot:  2 factory          factory app      00 00 00010000 00180000[0m
+[0;32mI (96) boot: End of partition table[0m
+[0;32mI (100) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=5397ch (342396) map[0m
+[0;32mI (196) esp_image: segment 1: paddr=000639a4 vaddr=3ffb0000 size=0336ch ( 13164) load[0m
+[0;32mI (200) esp_image: segment 2: paddr=00066d18 vaddr=40080000 size=09300h ( 37632) load[0m
+[0;32mI (213) esp_image: segment 3: paddr=00070020 vaddr=400d0020 size=343c4h (213956) map[0m
+[0;32mI (269) esp_image: segment 4: paddr=000a43ec vaddr=40089300 size=079d0h ( 31184) load[0m
+[0;32mI (287) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (287) boot: Disabling RNG early entropy source...[0m
+[0;32mI (298) cpu_start: Multicore app[0m
+[0;32mI (299) quad_psram: This chip is ESP32-D0WD[0m
+[0;32mI (299) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (301) esp_psram: Speed: 80MHz[0m
+[0;32mI (305) esp_psram: PSRAM initialized, cache is in low/high (2-core) mode.[0m
+[0;33mW (312) esp_psram: Virtual address not enough for PSRAM, map as much as we can. 4MB is mapped[0m
+[0;32mI (785) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (793) cpu_start: Pro cpu start user code[0m
+[0;32mI (793) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (793) app_init: Application information:[0m
+[0;32mI (796) app_init: Project name:     person_detection[0m
+[0;32mI (801) app_init: App version:      3b6d3d3-dirty[0m
+[0;32mI (807) app_init: Compile time:     Jun 25 2024 12:26:20[0m
+[0;32mI (813) app_init: ELF file SHA256:  696ff7e28...[0m
+[0;32mI (818) app_init: ESP-IDF:          v5.3-dev-2747-g4f3cd0deb9[0m
+[0;32mI (824) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (829) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (834) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (839) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (846) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (852) heap_init: At 3FFB41A8 len 0002BE58 (175 KiB): DRAM[0m
+[0;32mI (858) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (865) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (871) heap_init: At 40090CD0 len 0000F330 (60 KiB): IRAM[0m
+[0;32mI (878) esp_psram: Adding pool of 4096K of PSRAM memory to heap allocator[0m
+[0;32mI (885) spi_flash: detected chip: generic[0m
+[0;32mI (889) spi_flash: flash io: qio[0m
+[0;33mW (893) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (905) main_task: Started on CPU0[0m
+[0;32mI (915) main_task: Calling app_main()[0m
+[0;32mI (915) gpio: GPIO[13]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (915) gpio: GPIO[12]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (925) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (935) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (945) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (955) cam_hal: cam init ok[0m
+[0;32mI (955) sccb: pin_sda 26 pin_scl 27[0m
+[0;32mI (965) sccb: sccb_i2c_port=1[0m
+[0;32mI (965) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1005) camera: Detected camera at address=0x30[0m
+[0;32mI (1005) camera: Detected OV2640 camera[0m
+[0;32mI (1005) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (1075) esp32 ll_cam: node_size: 3072, nodes_per_line: 1, lines_per_node: 4, dma_half_buffer_min:  3072, dma_half_buffer: 12288,lines_per_half_buffer: 16, dma_buffer_size: 24576, image_size: 18432[0m
+[0;32mI (1085) cam_hal: buffer_size: 24576, half_buffer_size: 12288, node_buffer_size: 3072, node_cnt: 8, total_cnt: 1[0m
+[0;32mI (1095) cam_hal: Allocating 9216 Byte frame buffer in PSRAM[0m
+[0;32mI (1105) cam_hal: Allocating 9216 Byte frame buffer in PSRAM[0m
+[0;32mI (1105) cam_hal: cam config ok[0m
+[0;32mI (1115) ov2640: Set PLL: clk_2x: 0, clk_div: 3, pclk_auto: 1, pclk_div: 8[0m
+Camera Initialized
+
+Boton No presionado
+Image Captured
+
+person score:-49%, no person score 149%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:49%, no person score 51%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:45%, no person score 55%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:43%, no person score 57%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:43%, no person score 57%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:49%, no person score 51%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-38%, no person score 138%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-42%, no person score 142%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-39%, no person score 139%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-34%, no person score 134%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-39%, no person score 139%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-41%, no person score 141%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-37%, no person score 137%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:48%, no person score 52%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:41%, no person score 59%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-47%, no person score 147%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-44%, no person score 144%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-31%, no person score 131%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:48%, no person score 52%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-40%, no person score 140%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-32%, no person score 132%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-30%, no person score 130%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-44%, no person score 144%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:50%, no person score 50%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:50%, no person score 50%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:49%, no person score 51%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-47%, no person score 147%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-47%, no person score 147%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-47%, no person score 147%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-47%, no person score 147%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-48%, no person score 148%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-48%, no person score 148%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-47%, no person score 147%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-46%, no person score 146%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-46%, no person score 146%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-49%, no person score 149%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-45%, no person score 145%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-28%, no person score 128%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-47%, no person score 147%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:41%, no person score 59%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:32%, no person score 68%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:38%, no person score 62%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:48%, no person score 52%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-28%, no person score 128%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-26%, no person score 126%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-24%, no person score 124%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-25%, no person score 125%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-30%, no person score 130%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-31%, no person score 131%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-28%, no person score 128%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-24%, no person score 124%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-27%, no person score 127%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-26%, no person score 126%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-26%, no person score 126%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-26%, no person score 126%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-24%, no person score 124%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-25%, no person score 125%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-25%, no person score 125%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-27%, no person score 127%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-28%, no person score 128%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-28%, no person score 128%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-26%, no person score 126%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-27%, no person score 127%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-38%, no person score 138%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:47%, no person score 53%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-49%, no person score 149%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:34%, no person score 66%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:27%, no person score 73%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:33%, no person score 67%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:36%, no person score 64%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:41%, no person score 59%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:41%, no person score 59%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:42%, no person score 58%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:41%, no person score 59%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:46%, no person score 54%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:39%, no person score 61%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:35%, no person score 65%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:31%, no person score 69%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:27%, no person score 73%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:48%, no person score 52%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:44%, no person score 56%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-28%, no person score 128%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-20%, no person score 120%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-19%, no person score 119%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-19%, no person score 119%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-18%, no person score 118%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-16%, no person score 116%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-18%, no person score 118%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-17%, no person score 117%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-17%, no person score 117%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-17%, no person score 117%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-16%, no person score 116%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-19%, no person score 119%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-28%, no person score 128%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-25%, no person score 125%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-22%, no person score 122%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-21%, no person score 121%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-20%, no person score 120%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-18%, no person score 118%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-18%, no person score 118%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-19%, no person score 119%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-19%, no person score 119%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-19%, no person score 119%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-22%, no person score 122%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-20%, no person score 120%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-19%, no person score 119%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-21%, no person score 121%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-22%, no person score 122%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-19%, no person score 119%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-21%, no person score 121%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-23%, no person score 123%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-20%, no person score 120%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-25%, no person score 125%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-22%, no person score 122%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-20%, no person score 120%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-22%, no person score 122%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-24%, no person score 124%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-23%, no person score 123%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-26%, no person score 126%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-24%, no person score 124%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-24%, no person score 124%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-24%, no person score 124%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-29%, no person score 129%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-25%, no person score 125%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-25%, no person score 125%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-23%, no person score 123%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-24%, no person score 124%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-22%, no person score 122%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-22%, no person score 122%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-23%, no person score 123%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-22%, no person score 122%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-22%, no person score 122%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-21%, no person score 121%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-21%, no person score 121%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-20%, no person score 120%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-20%, no person score 120%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-21%, no person score 121%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-23%, no person score 123%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-24%, no person score 124%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-28%, no person score 128%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-27%, no person score 127%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-35%, no person score 135%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:45%, no person score 55%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-47%, no person score 147%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-36%, no person score 136%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-32%, no person score 132%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-48%, no person score 148%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-32%, no person score 132%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-35%, no person score 135%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-38%, no person score 138%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-33%, no person score 133%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-38%, no person score 138%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-34%, no person score 134%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-31%, no person score 131%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-22%, no person score 122%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-32%, no person score 132%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-30%, no person score 130%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-36%, no person score 136%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:47%, no person score 53%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-35%, no person score 135%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-33%, no person score 133%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-31%, no person score 131%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-21%, no person score 121%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-33%, no person score 133%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-32%, no person score 132%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-31%, no person score 131%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-27%, no person score 127%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-25%, no person score 125%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-26%, no person score 126%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-26%, no person score 126%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-21%, no person score 121%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-21%, no person score 121%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-29%, no person score 129%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-33%, no person score 133%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-36%, no person score 136%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-49%, no person score 149%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-27%, no person score 127%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-38%, no person score 138%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-34%, no person score 134%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-31%, no person score 131%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-19%, no person score 119%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-23%, no person score 123%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-27%, no person score 127%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-25%, no person score 125%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-33%, no person score 133%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-29%, no person score 129%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-28%, no person score 128%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-47%, no person score 147%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-44%, no person score 144%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-36%, no person score 136%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-35%, no person score 135%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:49%, no person score 51%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-39%, no person score 139%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-39%, no person score 139%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:41%, no person score 59%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:45%, no person score 55%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-41%, no person score 141%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:48%, no person score 52%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:49%, no person score 51%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-34%, no person score 134%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-31%, no person score 131%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-42%, no person score 142%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-34%, no person score 134%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:45%, no person score 55%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-42%, no person score 142%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-47%, no person score 147%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-41%, no person score 141%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:38%, no person score 62%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-49%, no person score 149%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-46%, no person score 146%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-31%, no person score 131%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-23%, no person score 123%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:43%, no person score 57%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-39%, no person score 139%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-36%, no person score 136%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-35%, no person score 135%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-29%, no person score 129%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-26%, no person score 126%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-26%, no person score 126%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-25%, no person score 125%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-24%, no person score 124%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-20%, no person score 120%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-12%, no person score 112%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-12%, no person score 112%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-12%, no person score 112%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-12%, no person score 112%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-13%, no person score 113%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-13%, no person score 113%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-13%, no person score 113%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-13%, no person score 113%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-13%, no person score 113%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-13%, no person score 113%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-13%, no person score 113%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-13%, no person score 113%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-13%, no person score 113%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-13%, no person score 113%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-12%, no person score 112%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-12%, no person score 112%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-13%, no person score 113%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-12%, no person score 112%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-12%, no person score 112%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-12%, no person score 112%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-12%, no person score 112%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-12%, no person score 112%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-12%, no person score 112%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-12%, no person score 112%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-17%, no person score 117%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-21%, no person score 121%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-36%, no person score 136%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-35%, no person score 135%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-26%, no person score 126%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-33%, no person score 133%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-27%, no person score 127%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-31%, no person score 131%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-41%, no person score 141%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-40%, no person score 140%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-37%, no person score 137%
+No person detected
+Boton No presionado
+Image Captured
+
+etsRչ� 8 &���0:&&'�S�!��i0x�B�=�ER��%U�ET�I���:0�L&BA%}�AS�e1SH_��Q%
+�˙�gsi� 0	�A�WP����5
+c�E��:0�0,\E��:0x�,dE���0x�b�A_d����A0,��E��:0��b��_d��A0�[��iDI�	�ock����1
+�+��0x3���030����752�C!�+���0�80�,lYˊ��52C!�+���0�����,lYˢj
+l�X���0�����,l�K���6�Y��y 0�00�65��[0;32mI (28) boot: ESP-IDF v5.3-dev-2747-g4f3cd0deb9 2nd stage bootloader[0m
+[0;32mI (28) boot: compile time Jun 25 2024 12:26:26[0m
+[0;32mI (30) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v1.0[0m
+[0;32mI (38) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (43) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (48) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (52) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (57) boot: Enabling RNG early entropy source...[0m
+[0;32mI (62) boot: Partition Table:[0m
+[0;32mI (66) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (73) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (81) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (88) boot:  2 factory          factory app      00 00 00010000 00180000[0m
+[0;32mI (96) boot: End of partition table[0m
+[0;32mI (100) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=5397ch (342396) map[0m
+[0;32mI (196) esp_image: segment 1: paddr=000639a4 vaddr=3ffb0000 size=0336ch ( 13164) load[0m
+[0;32mI (200) esp_image: segment 2: paddr=00066d18 vaddr=40080000 size=09300h ( 37632) load[0m
+[0;32mI (213) esp_image: segment 3: paddr=00070020 vaddr=400d0020 size=343c4h (213956) map[0m
+[0;32mI (269) esp_image: segment 4: paddr=000a43ec vaddr=40089300 size=079d0h ( 31184) load[0m
+[0;32mI (287) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (287) boot: Disabling RNG early entropy source...[0m
+[0;32mI (298) cpu_start: Multicore app[0m
+[0;32mI (299) quad_psram: This chip is ESP32-D0WD[0m
+[0;32mI (299) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (301) esp_psram: Speed: 80MHz[0m
+[0;32mI (305) esp_psram: PSRAM initialized, cache is in low/high (2-core) mode.[0m
+[0;33mW (312) esp_psram: Virtual address not enough for PSRAM, map as much as we can. 4MB is mapped[0m
+[0;32mI (785) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (793) cpu_start: Pro cpu start user code[0m
+[0;32mI (793) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (793) app_init: Application information:[0m
+[0;32mI (796) app_init: Project name:     person_detection[0m
+[0;32mI (801) app_init: App version:      3b6d3d3-dirty[0m
+[0;32mI (807) app_init: Compile time:     Jun 25 2024 12:26:20[0m
+[0;32mI (813) app_init: ELF file SHA256:  696ff7e28...[0m
+[0;32mI (818) app_init: ESP-IDF:          v5.3-dev-2747-g4f3cd0deb9[0m
+[0;32mI (824) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (829) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (834) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (839) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (846) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (852) heap_init: At 3FFB41A8 len 0002BE58 (175 KiB): DRAM[0m
+[0;32mI (858) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (865) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (871) heap_init: At 40090CD0 len 0000F330 (60 KiB): IRAM[0m
+[0;32mI (878) esp_psram: Adding pool of 4096K of PSRAM memory to heap allocator[0m
+[0;32mI (885) spi_flash: detected chip: generic[0m
+[0;32mI (890) spi_flash: flash io: qio[0m
+[0;33mW (893) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (905) main_task: Started on CPU0[0m
+[0;32mI (915) main_task: Calling app_main()[0m
+[0;32mI (915) gpio: GPIO[13]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (915) gpio: GPIO[12]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (925) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (935) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (945) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (955) cam_hal: cam init ok[0m
+[0;32mI (955) sccb: pin_sda 26 pin_scl 27[0m
+[0;32mI (965) sccb: sccb_i2c_port=1[0m
+[0;32mI (965) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1005) camera: Detected camera at address=0x30[0m
+[0;32mI (1005) camera: Detected OV2640 camera[0m
+[0;32mI (1005) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (1075) esp32 ll_cam: node_size: 3072, nodes_per_line: 1, lines_per_node: 4, dma_half_buffer_min:  3072, dma_half_buffer: 12288,lines_per_half_buffer: 16, dma_buffer_size: 24576, image_size: 18432[0m
+[0;32mI (1085) cam_hal: buffer_size: 24576, half_buffer_size: 12288, node_buffer_size: 3072, node_cnt: 8, total_cnt: 1[0m
+[0;32mI (1095) cam_hal: Allocating 9216 Byte frame buffer in PSRAM[0m
+[0;32mI (1105) cam_hal: Allocating 9216 Byte frame buffer in PSRAM[0m
+[0;32mI (1105) cam_hal: cam config ok[0m
+[0;32mI (1115) ov2640: Set PLL: clk_2x: 0, clk_div: 3, pclk_auto: 1, pclk_div: 8[0m
+Camera Initialized
+
+Boton No presionado
+Image Captured
+
+person score:-31%, no person score 131%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-29%, no person score 129%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-37%, no person score 137%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-20%, no person score 120%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-16%, no person score 116%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-12%, no person score 112%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-14%, no person score 114%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-14%, no person score 114%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-14%, no person score 114%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-13%, no person score 113%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-13%, no person score 113%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-12%, no person score 112%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-12%, no person score 112%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-13%, no person score 113%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-13%, no person score 113%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-14%, no person score 114%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-14%, no person score 114%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-13%, no person score 113%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-13%, no person score 113%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-13%, no person score 113%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-13%, no person score 113%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-13%, no person score 113%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-13%, no person score 113%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-13%, no person score 113%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-12%, no person score 112%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-13%, no person score 113%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-14%, no person score 114%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-13%, no person score 113%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-13%, no person score 113%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-13%, no person score 113%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-13%, no person score 113%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-13%, no person score 113%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-13%, no person score 113%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-13%, no person score 113%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-12%, no person score 112%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-11%, no person score 111%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-12%, no person score 112%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-21%, no person score 121%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-20%, no person score 120%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-18%, no person score 118%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-19%, no person score 119%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-20%, no person score 120%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-19%, no person score 119%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-18%, no person score 118%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-19%, no person score 119%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-19%, no person score 119%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-18%, no person score 118%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-18%, no person score 118%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-19%, no person score 119%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-18%, no person score 118%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-20%, no person score 120%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-21%, no person score 121%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-28%, no person score 128%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-36%, no person score 136%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-30%, no person score 130%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-39%, no person score 139%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-35%, no person score 135%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-34%, no person score 134%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-33%, no person score 133%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-28%, no person score 128%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-29%, no person score 129%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-33%, no person score 133%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-33%, no person score 133%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-31%, no person score 131%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-19%, no person score 119%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-28%, no person score 128%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-29%, no person score 129%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-28%, no person score 128%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-27%, no person score 127%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-26%, no person score 126%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-26%, no person score 126%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-25%, no person score 125%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-20%, no person score 120%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-26%, no person score 126%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-23%, no person score 123%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-32%, no person score 132%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-32%, no person score 132%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-24%, no person score 124%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-24%, no person score 124%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-33%, no person score 133%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-35%, no person score 135%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-35%, no person score 135%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-14%, no person score 114%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-30%, no person score 130%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-43%, no person score 143%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-49%, no person score 149%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-40%, no person score 140%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-26%, no person score 126%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-37%, no person score 137%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:32%, no person score 68%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:29%, no person score 71%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:37%, no person score 63%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:17%, no person score 83%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:24%, no person score 76%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:32%, no person score 68%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:27%, no person score 73%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:26%, no person score 74%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:21%, no person score 79%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:24%, no person score 76%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:24%, no person score 76%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:26%, no person score 74%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:25%, no person score 75%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:23%, no person score 77%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:26%, no person score 74%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:34%, no person score 66%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:38%, no person score 62%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:42%, no person score 58%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:37%, no person score 63%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:39%, no person score 61%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:38%, no person score 62%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:40%, no person score 60%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:43%, no person score 57%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:36%, no person score 64%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:37%, no person score 63%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:36%, no person score 64%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:39%, no person score 61%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:38%, no person score 62%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:36%, no person score 64%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:37%, no person score 63%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:38%, no person score 62%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:37%, no person score 63%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:37%, no person score 63%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:37%, no person score 63%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:44%, no person score 56%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:21%, no person score 79%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:31%, no person score 69%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:18%, no person score 82%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:20%, no person score 80%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:45%, no person score 55%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:39%, no person score 61%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:38%, no person score 62%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:35%, no person score 65%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:18%, no person score 82%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:37%, no person score 63%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:43%, no person score 57%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:22%, no person score 78%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:15%, no person score 85%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:14%, no person score 86%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:13%, no person score 87%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:14%, no person score 86%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:13%, no person score 87%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:22%, no person score 78%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-31%, no person score 131%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-24%, no person score 124%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-28%, no person score 128%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-25%, no person score 125%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:21%, no person score 79%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:18%, no person score 82%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:26%, no person score 74%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:14%, no person score 86%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:12%, no person score 88%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:13%, no person score 87%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:12%, no person score 88%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:16%, no person score 84%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:21%, no person score 79%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:19%, no person score 81%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:16%, no person score 84%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:18%, no person score 82%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:16%, no person score 84%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:21%, no person score 79%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:20%, no person score 80%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:34%, no person score 66%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-34%, no person score 134%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-29%, no person score 129%
+No person detected
+Boton No presionado
+Image Captured
+
+per�o��>/&S	r������쮬K���*��֧����on`det嬕�?
+����r����{ion���I�������ɕ�5���person score:-24%, no person score 124%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-29%, no person score 129%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-37%, no person score 137%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-26%, no person score 126%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-44%, no person score 144%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-44%, no person score 144%
+No per�"����ٕ�5
+Boton0No presionado
+Image Captured
+
+person score:-39%, no person score 139%
+No person detected
+�����No presionado
+Image Captured
+
+person score:-35%, no person sco����*j
+No person detected
+Boton N�ɕͥ�����5
+Image Captu��5
+
+erson score:-37%, no person score 137%
+No person detected
+Boton No presionado
+Image Captured
+
+Oͽ��score:-49%, no person score 149%
+No person detected
+Boton No presionado
+Image Captured
+
+�Hc�re�I	r��person �HMMj��ͽ���Y���ｹ��pr������j�person score:45%, no person score 55%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:41%, no person score 59%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:42%, no person score 58%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:41%, no person score 59%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-32%, no person score 132%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-21%, no person score 121%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:43%, no person score 57%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:45%, no person score 55%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-27%, no person score 127%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-24%, no person score 124%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-32%, no person score 132%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-43%, no person score 143%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-49%, no person score 149%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:46%, no person score 54%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:47%, no person score 53%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:42%, no person score 58%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:45%, no person score 55%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:50%, no person score 50%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-45%, no person score 145%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:44%, no person score 56%
+No person detected
+person score:41%, no person score 59%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:38%, no person score 62%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:49%, no person score 51%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:41%, no person score 59%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:43%, no person score 57%
+No person detected
+Boton No presionado
+Image Captured
+
+et�Rչ� 8 2�L��Ғ2:5SH
+�.���� (POU��9}�ESE�JI���:0xL&B�A�_FA*�e1SH_Bꊕj
+confZ֥�� 0, ӕ]A�0xee��,k�E���0x00,\E���0x00�}���:0x0�cs�E���0x00,�}���:0x0bwp_�.����0
+�����R��ock V��1C!�+�:0x3�����,leK����j
+loX����0078�0,lYK����2
+�+���00��00����4C!�+�:0x4�804�,le�'ӊ�j
+en���0����c
+[0;32mI (28) boot: ESP-IDF v5.3-dev-2747-g4f3cd0deb9 2nd stage bootloader[0m
+[0;32mI (28) boot: compile time Jun 25 2024 12:26:26[0m
+[0;32mI (30) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v1.0[0m
+[0;32mI (38) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (43) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (48) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (52) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (57) boot: Enabling RNG early entropy source...[0m
+[0;32mI (62) boot: Partition Table:[0m
+[0;32mI (66) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (73) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (81) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (88) boot:  2 factory          factory app      00 00 00010000 00180000[0m
+[0;32mI (96) boot: End of partition table[0m
+[0;32mI (100) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=5397ch (342396) map[0m
+[0;32mI (196) esp_image: segment 1: paddr=000639a4 vaddr=3ffb0000 size=0336ch ( 13164) load[0m
+[0;32mI (200) esp_image: segment 2: paddr=00066d18 vaddr=40080000 size=09300h ( 37632) load[0m
+[0;32mI (213) esp_image: segment 3: paddr=00070020 vaddr=400d0020 size=343c4h (213956) map[0m
+[0;32mI (269) esp_image: segment 4: paddr=000a43ec vaddr=40089300 size=079d0h ( 31184) load[0m
+[0;32mI (287) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (287) boot: Disabling RNG early entropy source...[0m
+[0;32mI (298) cpu_start: Multicore app[0m
+[0;32mI (299) quad_psram: This chip is ESP32-D0WD[0m
+[0;32mI (299) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (301) esp_psram: Speed: 80MHz[0m
+[0;32mI (305) esp_psram: PSRAM initialized, cache is in low/high (2-core) mode.[0m
+[0;33mW (312) esp_psram: Virtual address not enough for PSRAM, map as much as we can. 4MB is mapped[0m
+[0;32mI (785) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (793) cpu_start: Pro cpu start user code[0m
+[0;32mI (793) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (793) app_init: Application information:[0m
+[0;32mI (796) app_init: Project name:     person_detection[0m
+[0;32mI (801) app_init: App version:      3b6d3d3-dirty[0m
+[0;32mI (807) app_init: Compile time:     Jun 25 2024 12:26:20[0m
+[0;32mI (813) app_init: ELF file SHA256:  696ff7e28...[0m
+[0;32mI (818) app_init: ESP-IDF:          v5.3-dev-2747-g4f3cd0deb9[0m
+[0;32mI (824) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (829) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (834) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (839) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (846) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (852) heap_init: At 3FFB41A8 len 0002BE58 (175 KiB): DRAM[0m
+[0;32mI (858) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (865) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (871) heap_init: At 40090CD0 len 0000F330 (60 KiB): IRAM[0m
+[0;32mI (878) esp_psram: Adding pool of 4096K of PSRAM memory to heap allocator[0m
+[0;32mI (885) spi_flash: detected chip: generic[0m
+[0;32mI (890) spi_flash: flash io: qio[0m
+[0;33mW (894) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (905) main_task: Started on CPU0[0m
+[0;32mI (915) main_task: Calling app_main()[0m
+[0;32mI (915) gpio: GPIO[13]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (915) gpio: GPIO[12]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (925) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (935) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (945) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (955) cam_hal: cam init ok[0m
+[0;32mI (955) sccb: pin_sda 26 pin_scl 27[0m
+[0;32mI (965) sccb: sccb_i2c_port=1[0m
+[0;32mI (965) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1005) camera: Detected camera at address=0x30[0m
+[0;32mI (1005) camera: Detected OV2640 camera[0m
+[0;32mI (1005) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (1075) esp32 ll_cam: node_size: 3072, nodes_per_line: 1, lines_per_node: 4, dma_half_buffer_min:  3072, dma_half_buffer: 12288,lines_per_half_buffer: 16, dma_buffer_size: 24576, image_size: 18432[0m
+[0;32mI (1085) cam_hal: buffer_size: 24576, half_buffer_size: 12288, node_buffer_size: 3072, node_cnt: 8, total_cnt: 1[0m
+[0;32mI (1095) cam_hal: Allocating 9216 Byte frame buffer in PSRAM[0m
+[0;32mI (1105) cam_hal: Allocating 9216 Byte frame buffer in PSRAM[0m
+[0;32mI (1105) cam_hal: cam config ok[0m
+[0;32mI (1115) ov2640: Set PLL: clk_2x: 0, clk_div: 3, pclk_auto: 1, pclk_div: 8[0m
+Camera Initialized
+
+Boton No presionado
+Image Captured
+
+person score:-24%, no person score 124%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-24%, no person score 124%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-19%, no person score 119%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-19%, no person score 119%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-24%, no person score 124%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-19%, no person score 119%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-19%, no person score 119%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-17%, no person score 117%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-18%, no person score 118%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-21%, no person score 121%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-26%, no person score 126%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-30%, no person score 130%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-33%, no person score 133%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-20%, no person score 120%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-24%, no person score 124%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-21%, no person score 121%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-24%, no person score 124%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-20%, no person score 120%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-20%, no person score 120%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-20%, no person score 120%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-20%, no person score 120%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-22%, no person score 122%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-22%, no person score 122%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-20%, no person score 120%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-20%, no person score 120%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-19%, no person score 119%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-19%, no person score 119%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-19%, no person score 119%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-18%, no person score 118%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-17%, no person score 117%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-16%, no person score 116%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-17%, no person score 117%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-18%, no person score 118%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-18%, no person score 118%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-19%, no person score 119%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-15%, no person score 115%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-14%, no person score 114%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-17%, no person score 117%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-16%, no person score 116%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-19%, no person score 119%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-19%, no person score 119%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-18%, no person score 118%
+No person detected
+Boton presionado
+Image Captured
+
+person score:-21%, no person score 121%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-20%, no person score 120%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-21%, no person score 121%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-20%, no person score 120%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-18%, no person score 118%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-19%, no person score 119%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-20%, no person score 120%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-19%, no person score 119%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-21%, no person score 121%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-18%, no person score 118%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-22%, no person score 122%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-31%, no person score 131%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-26%, no person score 126%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-25%, no person score 125%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-25%, no person score 125%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-21%, no person score 121%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-27%, no person score 127%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-31%, no person score 131%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-28%, no person score 128%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-36%, no person score 136%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-29%, no person score 129%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-31%, no person score 131%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-31%, no person score 131%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-33%, no person score 133%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-31%, no person score 131%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-18%, no person score 118%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:34%, no person score 66%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-48%, no person score 148%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-45%, no person score 145%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:47%, no person score 53%
+----Person Detected----
+Boton No presionado
+Image Captured
+
+person score:42%, no person score 58%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:36%, no person score 64%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:45%, no person score 55%
+----Person Detected----
+Boton No presionado
+Image Captured
+
+person score:-41%, no person score 141%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-45%, no person score 145%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-36%, no person score 136%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:34%, no person score 66%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:14%, no person score 86%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:14%, no person score 86%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:36%, no person score 64%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:44%, no person score 56%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-43%, no person score 143%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-41%, no person score 141%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-42%, no person score 142%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-41%, no person score 141%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-40%, no person score 140%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-44%, no person score 144%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-39%, no person score 139%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-41%, no person score 141%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-40%, no person score 140%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-40%, no person score 140%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-48%, no person score 148%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:39%, no person score 61%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:38%, no person score 62%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:34%, no person score 66%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:24%, no person score 76%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:45%, no person score 55%
+----Person Detected----
+Boton No presionado
+Image Captured
+
+person score:-47%, no person score 147%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-47%, no person score 147%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-40%, no person score 140%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-42%, no person score 142%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-42%, no person score 142%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-47%, no person score 147%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-42%, no person score 142%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-42%, no person score 142%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-43%, no person score 143%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-43%, no person score 143%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-43%, no person score 143%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-46%, no person score 146%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-44%, no person score 144%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-42%, no person score 142%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-46%, no person score 146%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-45%, no person score 145%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-45%, no person score 145%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-44%, no person score 144%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-45%, no person score 145%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-42%, no person score 142%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-45%, no person score 145%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-47%, no person score 147%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-46%, no person score 146%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-45%, no person score 145%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-44%, no person score 144%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-45%, no person score 145%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-48%, no person score 148%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-46%, no person score 146%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-42%, no person score 142%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-45%, no person score 145%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-44%, no person score 144%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-44%, no person score 144%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-43%, no person score 143%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-44%, no person score 144%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-44%, no person score 144%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-45%, no person score 145%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-42%, no person score 142%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:39%, no person score 61%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:38%, no person score 62%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:41%, no person score 59%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:49%, no person score 51%
+----Person Detected----
+Boton No presionado
+Image Captured
+
+person score:41%, no person score 59%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-31%, no person score 131%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-45%, no person score 145%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:38%, no person score 62%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:30%, no person score 70%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:36%, no person score 64%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-46%, no person score 146%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-48%, no person score 148%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-45%, no person score 145%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-44%, no person score 144%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-45%, no person score 145%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-45%, no person score 145%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-46%, no person score 146%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-46%, no person score 146%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-46%, no person score 146%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-46%, no person score 146%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-44%, no person score 144%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-43%, no person score 143%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-45%, no person score 145%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-46%, no person score 146%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-47%, no person score 147%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-45%, no person score 145%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-47%, no person score 147%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-48%, no person score 148%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-49%, no person score 149%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-47%, no person score 147%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:45%, no person score 55%
+----Person Detected----
+Boton No presionado
+Image Captured
+
+person score:41%, no person score 59%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:44%, no person score 56%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-44%, no person score 144%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:39%, no person score 61%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:36%, no person score 64%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:41%, no person score 59%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:38%, no person score 62%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:36%, no person score 64%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:35%, no person score 65%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:36%, no person score 64%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:37%, no person score 63%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:36%, no person score 64%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:38%, no person score 62%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:39%, no person score 61%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:37%, no person score 63%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:35%, no person score 65%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:35%, no person score 65%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:34%, no person score 66%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:38%, no person score 62%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:31%, no person score 69%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:34%, no person score 66%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:33%, no person score 67%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:31%, no person score 69%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:32%, no person score 68%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:32%, no person score 68%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:34%, no person score 66%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:31%, no person score 69%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:33%, no person score 67%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:32%, no person score 68%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:32%, no person score 68%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:32%, no person score 68%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:31%, no person score 69%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:45%, no person score 55%
+----Person Detected----
+Boton No presionado
+Image Captured
+
+person score:50%, no person score 50%
+----Person Detected----
+Boton No presionado
+Image Captured
+
+person score:-48%, no person score 148%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-49%, no person score 149%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-38%, no person score 138%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:45%, no person score 55%
+----Person Detected----
+Boton No presionado
+Image Captured
+
+person score:32%, no person score 68%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:33%, no person score 67%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-38%, no person score 138%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:45%, no person score 55%
+----Person Detected----
+Boton No presionado
+Image Captured
+
+person score:44%, no person score 56%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:41%, no person score 59%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-39%, no person score 139%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:42%, no person score 58%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:44%, no person score 56%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:45%, no person score 55%
+----Person Detected----
+Boton No presionado
+Image Captured
+
+person score:45%, no person score 55%
+----Person Detected----
+Boton No presionado
+Image Captured
+
+person score:44%, no person score 56%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-45%, no person score 145%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-40%, no person score 140%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:37%, no person score 63%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:40%, no person score 60%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:38%, no person score 62%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:39%, no person score 61%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:39%, no person score 61%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:39%, no person score 61%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:40%, no person score 60%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:40%, no person score 60%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:39%, no person score 61%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:40%, no person score 60%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:40%, no person score 60%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:41%, no person score 59%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:40%, no person score 60%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:41%, no person score 59%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:41%, no person score 59%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:41%, no person score 59%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:40%, no person score 60%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:39%, no person score 61%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:41%, no person score 59%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:41%, no person score 59%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:39%, no person score 61%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:40%, no person score 60%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:39%, no person score 61%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:41%, no person score 59%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:40%, no person score 60%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:40%, no person score 60%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:40%, no person score 60%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:38%, no person score 62%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:40%, no person score 60%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:40%, no person score 60%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:41%, no person score 59%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:38%, no person score 62%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:40%, no person score 60%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:40%, no person score 60%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:39%, no person score 61%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:38%, no person score 62%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:40%, no person score 60%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:39%, no person score 61%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:39%, no person score 61%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:40%, no person score 60%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:39%, no person score 61%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:39%, no person score 61%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:37%, no person score 63%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:38%, no person score 62%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:38%, no person score 62%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:38%, no person score 62%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:38%, no person score 62%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:37%, no person score 63%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:38%, no person score 62%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:38%, no person score 62%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:39%, no person score 61%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:39%, no person score 61%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:38%, no person score 62%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:37%, no person score 63%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:34%, no person score 66%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:38%, no person score 62%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:36%, no person score 64%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:33%, no person score 67%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:41%, no person score 59%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:49%, no person score 51%
+----Person Detected----
+Boton No presionado
+Image Captured
+
+person score:48%, no person score 52%
+----Person Detected----
+Boton No presionado
+Image Captured
+
+person score:50%, no person score 50%
+----Person Detected----
+Boton No presionado
+Image Captured
+
+person score:-42%, no person score 142%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-42%, no person score 142%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-45%, no person score 145%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:40%, no person score 60%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:42%, no person score 58%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:42%, no person score 58%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:39%, no person score 61%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:41%, no person score 59%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:41%, no person score 59%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:41%, no person score 59%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:41%, no person score 59%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:42%, no person score 58%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:41%, no person score 59%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:39%, no person score 61%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:40%, no person score 60%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:41%, no person score 59%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:41%, no person score 59%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:41%, no person score 59%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:40%, no person score 60%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:38%, no person score 62%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:41%, no person score 59%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:43%, no person score 57%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:41%, no person score 59%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:43%, no person score 57%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:40%, no person score 60%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:39%, no person score 61%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:39%, no person score 61%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:39%, no person score 61%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:40%, no person score 60%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:41%, no person score 59%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:39%, no person score 61%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:40%, no person score 60%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:40%, no person score 60%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:40%, no person score 60%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:40%, no person score 60%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:38%, no person score 62%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:41%, no person score 59%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:39%, no person score 61%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:39%, no person score 61%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:42%, no person score 58%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:37%, no person score 63%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:38%, no person score 62%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:39%, no person score 61%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:39%, no person score 61%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:39%, no person score 61%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:40%, no person score 60%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:41%, no person score 59%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:38%, no person score 62%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:39%, no person score 61%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:39%, no person score 61%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:37%, no person score 63%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:37%, no person score 63%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:40%, no person score 60%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:38%, no person score 62%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:42%, no person score 58%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:45%, no person score 55%
+----Person Detected----
+Boton No presionado
+Image Captured
+
+person score:50%, no person score 50%
+----Person Detected----
+Boton No presionado
+Image Captured
+
+person score:-42%, no person score 142%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-20%, no person score 120%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:37%, no person score 63%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:38%, no person score 62%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:37%, no person score 63%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:35%, no person score 65%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:34%, no person score 66%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:35%, no person score 65%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:37%, no person score 63%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:38%, no person score 62%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:37%, no person score 63%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-39%, no person score 139%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-36%, no person score 136%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-28%, no person score 128%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-27%, no person score 127%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-23%, no person score 123%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-18%, no person score 118%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-26%, no person score 126%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-29%, no person score 129%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-25%, no person score 125%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-26%, no person score 126%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-23%, no person score 123%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-24%, no person score 124%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-29%, no person score 129%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-21%, no person score 121%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-22%, no person score 122%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-21%, no person score 121%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-23%, no person score 123%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-20%, no person score 120%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-26%, no person score 126%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-33%, no person score 133%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-28%, no person score 128%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-35%, no person score 135%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-31%, no person score 131%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-31%, no person score 131%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-31%, no person score 131%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-31%, no person score 131%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-24%, no person score 124%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-29%, no person score 129%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-31%, no person score 131%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-26%, no person score 126%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:42%, no person score 58%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:35%, no person score 65%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:46%, no person score 54%
+----Person Detected----
+Boton No presionado
+Image Captured
+
+person score:42%, no person score 58%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:40%, no person score 60%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-42%, no person score 142%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-24%, no person score 124%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:46%, no person score 54%
+----Person Detected----
+Boton No presionado
+Image Captured
+
+person score:-39%, no person score 139%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:29%, no person score 71%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:-23%, no person score 123%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:44%, no person score 56%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:21%, no person score 79%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:22%, no person score 78%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:17%, no person score 83%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:12%, no person score 88%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:12%, no person score 88%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:12%, no person score 88%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:12%, no person score 88%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:12%, no person score 88%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:12%, no person score 88%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:12%, no person score 88%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:12%, no person score 88%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:12%, no person score 88%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:12%, no person score 88%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:12%, no person score 88%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:12%, no person score 88%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:12%, no person score 88%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:12%, no person score 88%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:12%, no person score 88%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:12%, no person score 88%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:12%, no person score 88%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:12%, no person score 88%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:12%, no person score 88%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:12%, no person score 88%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:12%, no person score 88%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:12%, no person score 88%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:12%, no person score 88%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:12%, no person score 88%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:12%, no person score 88%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:12%, no person score 88%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:12%, no person score 88%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:12%, no person score 88%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:12%, no person score 88%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:12%, no person score 88%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:12%, no person score 88%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:12%, no person score 88%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:12%, no person score 88%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:12%, no person score 88%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:12%, no person score 88%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:12%, no person score 88%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:12%, no person score 88%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:12%, no person score 88%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:12%, no person score 88%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:12%, no person score 88%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:12%, no person score 88%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:12%, no person score 88%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:12%, no person score 88%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:12%, no person score 88%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:12%, no person score 88%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:12%, no person score 88%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:12%, no person score 88%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:12%, no person score 88%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:12%, no person score 88%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:12%, no person score 88%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:12%, no person score 88%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:12%, no person score 88%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+
+person score:11%, no person score 89%
+No person detected
+Boton No presionado
+Image Captured
+

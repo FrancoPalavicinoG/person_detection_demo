@@ -1,0 +1,7 @@
+[1/4] cd /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/build/esp-idf/esptool_py && /Users/franco_palavicino/esp/idf-tools/python_env/idf5.3_py3.12_env/bin/python /Users/franco_palavicino/esp/idf/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/build/partition_table/partition-table.bin /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/build/person_detection.bin
+person_detection.bin binary size 0x9bde0 bytes. Smallest app partition is 0x180000 bytes. 0xe4220 bytes (59%) free.
+[2/4] Performing build step for 'bootloader'
+[1/1] cd /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/build/bootloader/esp-idf/esptool_py && /Users/franco_palavicino/esp/idf-tools/python_env/idf5.3_py3.12_env/bin/python /Users/franco_palavicino/esp/idf/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/build/bootloader/bootloader.bin
+Bootloader binary size 0x6f50 bytes. 0xb0 bytes (1%) free.
+[3/4] No install step for 'bootloader'
+[4/4] Completed 'bootloader'

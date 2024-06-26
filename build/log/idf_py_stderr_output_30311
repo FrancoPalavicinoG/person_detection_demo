@@ -1,0 +1,1149 @@
+[0;33m--- WARNING: Serial ports accessed as /dev/tty.* will hang gdb if launched.[0m
+[0;33m--- Using /dev/cu.usbserial-110 instead...[0m
+[0;33m--- esp-idf-monitor 1.4.0 on /dev/cu.usbserial-110 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33mMultiple decode errors occured: Try checking the baud rate and XTAL frequency setting in menuconfig[0m
+[0;33mMultiple decode errors occured: Try checking the baud rate and XTAL frequency setting in menuconfig[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0;33m0x400870ad: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:84
+0x400870bd: strlen at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:96
+[0m
+[0;33m0x400d8359: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+0x400d7e62: tf_main() at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main.cc:35 (discriminator 1)
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d835c: loop at /Users/franco_palavicino/esp/projects_tf/person_detection_proyect/main/main_functions.cc:125
+[0m
+[0m
